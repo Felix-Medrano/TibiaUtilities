@@ -1,0 +1,36 @@
+# Ignorar archivos de usuario de Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignorar directorios de compilación
+bin/
+obj/
+Debug/
+Release/
+
+# Ignorar archivos de paquetes NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Ignorar archivos de configuración de publicación
+*.Publish.xml
+
+# Ignorar archivos de configuración de servicio
+*.PublishSettings
+
+# Ignorar archivos de caché de Visual Studio
+.vs/
+
+# Ignorar archivos de configuración de aplicación local
+appsettings.Development.json
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar archivos temporales
+*.tmp
