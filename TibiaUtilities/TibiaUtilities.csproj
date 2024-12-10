@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>FavIcon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,23 +49,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Core\Win32.cs" />
+    <Compile Include="CustomControls\TUControlButton.cs">
+      <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CustomControls\TUMainButton.cs">
+      <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CustomControls\TUPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Interfaces\IPanelView.cs" />
+    <Compile Include="Lib\TUColors.cs" />
+    <Compile Include="Lib\TUData.cs" />
+    <Compile Include="Lib\TUFonts.cs" />
+    <Compile Include="Lib\TUFunctions.cs" />
+    <Compile Include="Lib\TUHelper.cs" />
+    <Compile Include="Lib\TUStrings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Components\MainButtonPanelView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Panels\HousesPanelView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Panels\LootSplitPanelView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Panels\MainPanelView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Panels\HousesPanelView.resx">
+      <DependentUpon>HousesPanelView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Panels\LootSplitPanelView.resx">
+      <DependentUpon>LootSplitPanelView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Panels\MainPanelView.resx">
+      <DependentUpon>MainPanelView.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +120,41 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainButtonPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainButtonPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainButtonUnpressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BookC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backpack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MinimizeBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FavIcon.ico" />
+    <None Include="Resources\Logo.png" />
+    <None Include="Resources\MainPanelIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
