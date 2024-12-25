@@ -9,7 +9,7 @@ namespace TibiaUtilities.CustomControls
       this.DoubleBuffered = true;
       this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
       this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-      this.UpdateStyles();
+      this.SetStyle(ControlStyles.UserPaint, true);
     }
   }
 }

@@ -22,7 +22,7 @@ namespace TibiaUtilities.Lib
     public static TUFonts Selected = new TUFonts()
     {
       TextFont = new Font("Constantia", 10, FontStyle.Bold),
-      TextColor = TUColors.WHITE_SINGS
+      TextColor = TUColors.WHITE_SIGNS
     };
   }
 }

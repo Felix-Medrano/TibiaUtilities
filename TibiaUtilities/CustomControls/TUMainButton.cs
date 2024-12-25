@@ -15,7 +15,6 @@ namespace TibiaUtilities.CustomControls
     private Point imageLocation = Point.Empty;
     private Image image         = null;
     private bool pressed        = false;
-    private bool press          = false;
     private bool isDrawing      = false;
     private bool isMaximized     = false;
 
@@ -66,8 +65,6 @@ namespace TibiaUtilities.CustomControls
       this.Font = TUFonts.Description.TextFont;
       this.ForeColor = TUFonts.Title.TextColor;
     }
-
-    protected override void OnClick(EventArgs e) => Click?.Invoke(this, e);
 
     protected override void OnPaint(PaintEventArgs e)
     {
@@ -136,7 +133,7 @@ namespace TibiaUtilities.CustomControls
         base.OnMouseUp(e);
         if (ClientRectangle.Contains(e.Location))
         {
-          OnClick(EventArgs.Empty);
+          Click?.Invoke(this, EventArgs.Empty);
           this.BackgroundImage = Resources.MainButtonPressed;
           isMaximized = true;
         }

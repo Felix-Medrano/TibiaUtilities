@@ -11,7 +11,8 @@ namespace TibiaUtilities.Lib
     {
       {TUStrings.MAIN_PANEL, new MainPanelView() },
       {TUStrings.HOUSES, new HousesPanelView() },
-      {TUStrings.LOOT_SPLIT, new LootSplitPanelView() }
+      {TUStrings.LOOT_SPLIT, new LootSplitPanelView() },
+      {TUStrings.INFO_PANEL, new InfoPanelView() }//Mantener Info panel al final
     };
   }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace FloatingStickyNotes.Core
 {
@@ -24,9 +25,23 @@ namespace FloatingStickyNotes.Core
     public static extern int SendMessage(IntPtr hWnd, int Msg, IntPtr wParam, IntPtr lParam);
 
     [DllImport("user32.dll")]
+    public static extern int SendMessage(IntPtr hWnd, Int32 wMsg, bool wParam, Int32 lParam);
+
+    [DllImport("user32.dll")]
     public static extern bool ReleaseCapture();
 
     [DllImport("user32.dll")]
     public static extern bool SetForegroundWindow(IntPtr hWnd);
+
+    public static void SuspendDrawing(Control parent)
+    {
+      SendMessage(parent.Handle, WM_SETREDRAW, false, 1);
+    }
+
+    public static void ResumeDrawing(Control parent)
+    {
+      SendMessage(parent.Handle, WM_SETREDRAW, true, 0);
+      parent.Refresh();
+    }
   }
 }

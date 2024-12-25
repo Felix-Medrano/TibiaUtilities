@@ -1,0 +1,507 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\views\\panels\\lootsplitpanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\views\\panels\\lootsplitpanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|c:\\users\\sckro\\desktop\\proyectos\\visual studio\\csharp\\tibiautilities\\tibiautilities\\views\\panels\\lootsplitpanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\views\\panels\\lootsplitpanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|c:\\users\\sckro\\desktop\\proyectos\\visual studio\\csharp\\tibiautilities\\tibiautilities\\customcontrols\\tucolorlabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\customcontrols\\tucolorlabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\views\\panels\\housespanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\views\\panels\\housespanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|c:\\users\\sckro\\desktop\\proyectos\\visual studio\\csharp\\tibiautilities\\tibiautilities\\views\\panels\\mainpanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\views\\panels\\mainpanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\views\\panels\\mainpanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\views\\panels\\mainpanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sckro\\AppData\\Local\\Temp\\.vsdbgsrc\\11753a9c98aec9ca8f0881e63fddfb0ac2eaa0dcb8101710e32f298fc0201de6\\ManifestBasedResourceGroveler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\views\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\views\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\lib\\tuhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\lib\\tuhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\BaseControl\\DisplayDataPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:TibiaUtilities\\CustomControls\\BaseControl\\DisplayDataPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sckro\\AppData\\Local\\Temp\\.vsdbgsrc\\628cc1d9b2919bdf0a3974f44c568b412fc5c334e06086bf21774eb3f0996686\\Application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sckro\\AppData\\Local\\Temp\\.vsdbgsrc\\5e099000ff3a8e3cae65cd95eb347b2aeb10e834026c7b26d17c3b53b7458b7e\\Form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\views\\components\\mainbuttonpanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\views\\components\\mainbuttonpanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\views\\components\\mainbuttonpanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\views\\components\\mainbuttonpanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\customcontrols\\turichtextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\customcontrols\\turichtextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\lib\\tumethodextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\lib\\tumethodextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\views\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\views\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\models\\lootsplit\\sessioninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\models\\lootsplit\\sessioninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\customcontrols\\transfers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\customcontrols\\transfers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\models\\lootsplit\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\models\\lootsplit\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\lib\\tucolors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\lib\\tucolors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\customcontrols\\basecontrol\\displaydatapanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\customcontrols\\basecontrol\\displaydatapanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\customcontrols\\transfers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\customcontrols\\transfers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\classes\\lootsplitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\classes\\lootsplitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\customcontrols\\basecontrol\\displaydatapanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\customcontrols\\basecontrol\\displaydatapanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\views\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\views\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\customcontrols\\tubutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\customcontrols\\tubutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\views\\panels\\housespanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\views\\panels\\housespanelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\tibiautilities\\customcontrols\\tucontrolbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9B9706CD-F52B-41A4-A7F4-8A49E57E8EEC}|TibiaUtilities\\TibiaUtilities.csproj|solutionrelative:tibiautilities\\customcontrols\\tucontrolbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Main.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Views\\Main.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Main.cs",
+              "RelativeToolTip": "TibiaUtilities\\Views\\Main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T02:01:48.225Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Main.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Main.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Views\\Main.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Main.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TibiaUtilities\\Views\\Main.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T01:26:58.025Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LootSplitPanelView.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Panels\\LootSplitPanelView.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Views\\Panels\\LootSplitPanelView.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Panels\\LootSplitPanelView.cs",
+              "RelativeToolTip": "TibiaUtilities\\Views\\Panels\\LootSplitPanelView.cs",
+              "ViewState": "AgIAAPcAAAAAAAAAAAAuwBMBAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T03:05:05.122Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LootSplitPanelView.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Panels\\LootSplitPanelView.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Views\\Panels\\LootSplitPanelView.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Panels\\LootSplitPanelView.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TibiaUtilities\\Views\\Panels\\LootSplitPanelView.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T20:32:01.558Z",
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a5174402-226b-48da-aa5c-91376ed45871}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainPanelView.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Panels\\MainPanelView.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Views\\Panels\\MainPanelView.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Panels\\MainPanelView.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TibiaUtilities\\Views\\Panels\\MainPanelView.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T20:41:42.997Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TUColorLabel.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\TUColorLabel.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\CustomControls\\TUColorLabel.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\TUColorLabel.cs",
+              "RelativeToolTip": "TibiaUtilities\\CustomControls\\TUColorLabel.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T20:35:20.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManifestBasedResourceGroveler.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\AppData\\Local\\Temp\\.vsdbgsrc\\11753a9c98aec9ca8f0881e63fddfb0ac2eaa0dcb8101710e32f298fc0201de6\\ManifestBasedResourceGroveler.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\11753a9c98aec9ca8f0881e63fddfb0ac2eaa0dcb8101710e32f298fc0201de6\\ManifestBasedResourceGroveler.cs",
+              "ToolTip": "C:\\Users\\sckro\\AppData\\Local\\Temp\\.vsdbgsrc\\11753a9c98aec9ca8f0881e63fddfb0ac2eaa0dcb8101710e32f298fc0201de6\\ManifestBasedResourceGroveler.cs [Solo lectura]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\11753a9c98aec9ca8f0881e63fddfb0ac2eaa0dcb8101710e32f298fc0201de6\\ManifestBasedResourceGroveler.cs [Solo lectura]",
+              "ViewState": "AgIAAH8BAAAAAAAAAAAuwI4BAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T20:29:04.677Z",
+              "EditorCaption": " [Solo lectura]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Form.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\AppData\\Local\\Temp\\.vsdbgsrc\\5e099000ff3a8e3cae65cd95eb347b2aeb10e834026c7b26d17c3b53b7458b7e\\Form.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5e099000ff3a8e3cae65cd95eb347b2aeb10e834026c7b26d17c3b53b7458b7e\\Form.cs",
+              "ToolTip": "C:\\Users\\sckro\\AppData\\Local\\Temp\\.vsdbgsrc\\5e099000ff3a8e3cae65cd95eb347b2aeb10e834026c7b26d17c3b53b7458b7e\\Form.cs [Solo lectura]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5e099000ff3a8e3cae65cd95eb347b2aeb10e834026c7b26d17c3b53b7458b7e\\Form.cs [Solo lectura]",
+              "ViewState": "AgIAAFIRAAAAAAAAAAAuwGERAAADAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T20:25:54.107Z",
+              "EditorCaption": " [Solo lectura]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Application.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\AppData\\Local\\Temp\\.vsdbgsrc\\628cc1d9b2919bdf0a3974f44c568b412fc5c334e06086bf21774eb3f0996686\\Application.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\628cc1d9b2919bdf0a3974f44c568b412fc5c334e06086bf21774eb3f0996686\\Application.cs",
+              "ToolTip": "C:\\Users\\sckro\\AppData\\Local\\Temp\\.vsdbgsrc\\628cc1d9b2919bdf0a3974f44c568b412fc5c334e06086bf21774eb3f0996686\\Application.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\628cc1d9b2919bdf0a3974f44c568b412fc5c334e06086bf21774eb3f0996686\\Application.cs",
+              "ViewState": "AgIAAAoMAAAAAAAAAAAuwBcMAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T06:47:08.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HousesPanelView.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Panels\\HousesPanelView.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Views\\Panels\\HousesPanelView.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Panels\\HousesPanelView.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TibiaUtilities\\Views\\Panels\\HousesPanelView.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T20:31:48.071Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainButtonPanelView.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Components\\MainButtonPanelView.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Views\\Components\\MainButtonPanelView.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Components\\MainButtonPanelView.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TibiaUtilities\\Views\\Components\\MainButtonPanelView.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T20:21:03.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainButtonPanelView.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Components\\MainButtonPanelView.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Views\\Components\\MainButtonPanelView.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Components\\MainButtonPanelView.cs [Solo lectura]",
+              "RelativeToolTip": "TibiaUtilities\\Views\\Components\\MainButtonPanelView.cs [Solo lectura]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T20:02:20.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TURichTextBox.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\TURichTextBox.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\CustomControls\\TURichTextBox.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\TURichTextBox.cs",
+              "RelativeToolTip": "TibiaUtilities\\CustomControls\\TURichTextBox.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T18:05:02.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TUMethodExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Lib\\TUMethodExtensions.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Lib\\TUMethodExtensions.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Lib\\TUMethodExtensions.cs",
+              "RelativeToolTip": "TibiaUtilities\\Lib\\TUMethodExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T17:50:43.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SessionInfo.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Models\\LootSplit\\SessionInfo.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Models\\LootSplit\\SessionInfo.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Models\\LootSplit\\SessionInfo.cs",
+              "RelativeToolTip": "TibiaUtilities\\Models\\LootSplit\\SessionInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T17:33:11.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TUHelper.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Lib\\TUHelper.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Lib\\TUHelper.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Lib\\TUHelper.cs",
+              "RelativeToolTip": "TibiaUtilities\\Lib\\TUHelper.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:39:01.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TUColors.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Lib\\TUColors.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Lib\\TUColors.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Lib\\TUColors.cs",
+              "RelativeToolTip": "TibiaUtilities\\Lib\\TUColors.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T07:45:21.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Transfers.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\Transfers.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\CustomControls\\Transfers.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\Transfers.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TibiaUtilities\\CustomControls\\Transfers.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T06:56:41.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DisplayDataPanel.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\BaseControl\\DisplayDataPanel.Designer.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\CustomControls\\BaseControl\\DisplayDataPanel.Designer.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\BaseControl\\DisplayDataPanel.Designer.cs",
+              "RelativeToolTip": "TibiaUtilities\\CustomControls\\BaseControl\\DisplayDataPanel.Designer.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAMwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T06:53:34.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TUButton.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\TUButton.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\CustomControls\\TUButton.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\TUButton.cs",
+              "RelativeToolTip": "TibiaUtilities\\CustomControls\\TUButton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T06:45:59.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LootSplitter.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Classes\\LootSplitter.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Classes\\LootSplitter.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Classes\\LootSplitter.cs",
+              "RelativeToolTip": "TibiaUtilities\\Classes\\LootSplitter.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T05:25:49.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Models\\LootSplit\\Player.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Models\\LootSplit\\Player.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Models\\LootSplit\\Player.cs",
+              "RelativeToolTip": "TibiaUtilities\\Models\\LootSplit\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T06:37:45.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Transfers.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\Transfers.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\CustomControls\\Transfers.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\Transfers.cs",
+              "RelativeToolTip": "TibiaUtilities\\CustomControls\\Transfers.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAEwEQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T06:35:17.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DisplayDataPanel.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\BaseControl\\DisplayDataPanel.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\CustomControls\\BaseControl\\DisplayDataPanel.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\BaseControl\\DisplayDataPanel.cs",
+              "RelativeToolTip": "TibiaUtilities\\CustomControls\\BaseControl\\DisplayDataPanel.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAqwDcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T05:39:55.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "HousesPanelView.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Panels\\HousesPanelView.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Views\\Panels\\HousesPanelView.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Panels\\HousesPanelView.cs",
+              "RelativeToolTip": "TibiaUtilities\\Views\\Panels\\HousesPanelView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T03:02:45.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TUControlButton.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\TUControlButton.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\CustomControls\\TUControlButton.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\TUControlButton.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TibiaUtilities\\CustomControls\\TUControlButton.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T05:56:37.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DisplayDataPanel.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\BaseControl\\DisplayDataPanel.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\CustomControls\\BaseControl\\DisplayDataPanel.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\CustomControls\\BaseControl\\DisplayDataPanel.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TibiaUtilities\\CustomControls\\BaseControl\\DisplayDataPanel.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T05:55:05.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Main.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Main.Designer.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Views\\Main.Designer.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Main.Designer.cs",
+              "RelativeToolTip": "TibiaUtilities\\Views\\Main.Designer.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAMwHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T05:54:27.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainPanelView.cs",
+              "DocumentMoniker": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Panels\\MainPanelView.cs",
+              "RelativeDocumentMoniker": "TibiaUtilities\\Views\\Panels\\MainPanelView.cs",
+              "ToolTip": "C:\\Users\\sckro\\Desktop\\Proyectos\\Visual Studio\\CSharp\\TibiaUtilities\\TibiaUtilities\\Views\\Panels\\MainPanelView.cs [Solo lectura]",
+              "RelativeToolTip": "TibiaUtilities\\Views\\Panels\\MainPanelView.cs [Solo lectura]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T19:58:06.055Z",
+              "EditorCaption": " [Solo lectura]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
