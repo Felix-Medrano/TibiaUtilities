@@ -1,6 +1,6 @@
 ﻿namespace Tibia_Utilities
 {
-  partial class Form1
+  partial class Main
   {
     /// <summary>
     /// Variable del diseñador necesaria.
@@ -28,10 +28,21 @@
     /// </summary>
     private void InitializeComponent()
     {
-      this.components = new System.ComponentModel.Container();
+      this.SuspendLayout();
+      // 
+      // Main
+      // 
+      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(800, 450);
-      this.Text = "Form1";
+      this.ClientSize = new System.Drawing.Size(800, 615);
+      this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+      this.MaximumSize = new System.Drawing.Size(800, 615);
+      this.MinimumSize = new System.Drawing.Size(800, 615);
+      this.Name = "Main";
+      this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+      this.Text = "Tibia Utilities";
+      this.ResumeLayout(false);
+
     }
 
     #endregion
