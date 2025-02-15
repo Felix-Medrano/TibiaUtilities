@@ -28,13 +28,26 @@
     /// </summary>
     private void InitializeComponent()
     {
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+      this.tuTopControlBar1 = new Tibia_Utilities.CustomControls.TUTopControlBar();
       this.SuspendLayout();
+      // 
+      // tuTopControlBar1
+      // 
+      this.tuTopControlBar1.EdgeWidth = 50;
+      this.tuTopControlBar1.Location = new System.Drawing.Point(126, 103);
+      this.tuTopControlBar1.Name = "tuTopControlBar1";
+      this.tuTopControlBar1.OriginalImage = ((System.Drawing.Image)(resources.GetObject("tuTopControlBar1.OriginalImage")));
+      this.tuTopControlBar1.Size = new System.Drawing.Size(443, 20);
+      this.tuTopControlBar1.TabIndex = 0;
       // 
       // Main
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.BackgroundImage = global::Tibia_Utilities.Properties.Resources.Background;
       this.ClientSize = new System.Drawing.Size(800, 615);
+      this.Controls.Add(this.tuTopControlBar1);
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
       this.MaximumSize = new System.Drawing.Size(800, 615);
       this.MinimumSize = new System.Drawing.Size(800, 615);
@@ -46,6 +59,8 @@
     }
 
     #endregion
+
+    private CustomControls.TUTopControlBar tuTopControlBar1;
   }
 }
 

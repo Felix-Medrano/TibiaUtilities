@@ -49,6 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomControls\TUTopControlBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Lib\ImageSlicer.cs" />
     <Compile Include="Views\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +92,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SckLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TopBar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

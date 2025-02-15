@@ -61,6 +61,16 @@ namespace Tibia_Utilities.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Background {
+            get {
+                object obj = ResourceManager.GetObject("Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
         /// </summary>
         internal static System.Drawing.Icon FavIcon {
@@ -76,6 +86,16 @@ namespace Tibia_Utilities.Properties {
         internal static System.Drawing.Bitmap SckLogo {
             get {
                 object obj = ResourceManager.GetObject("SckLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TopBar {
+            get {
+                object obj = ResourceManager.GetObject("TopBar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
