@@ -86,5 +86,8 @@
   <ItemGroup>
     <None Include="Resources\FavIcon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SckLogo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
