@@ -13,13 +13,14 @@ namespace Tibia_Utilities
     public Main()
     {
       InitializeComponent();
-      DoubleBuffered = true;
     }
 
     #region Override Events
     protected override void OnLoad(EventArgs e)
     {
       base.OnLoad(e);
+
+      DoubleBuffered = true;
 
       mainTopControlPanel.MouseDown += TopPanel_MouseDown;
       mainTitle.MouseDown += TopPanel_MouseDown;

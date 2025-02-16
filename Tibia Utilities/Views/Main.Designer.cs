@@ -29,13 +29,26 @@
     private void InitializeComponent()
     {
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+      this.tuSlicePanel1 = new Tibia_Utilities.CustomControls.TUSlicePanel();
       this.mainTopControlPanel = new Tibia_Utilities.CustomControls.TUTopControlBar();
       this.mainTitle = new System.Windows.Forms.Label();
       this.minimizeButton = new Tibia_Utilities.CustomControls.TUCtrlButton();
       this.closeButton = new Tibia_Utilities.CustomControls.TUCtrlButton();
-      this.tuSlicePanel1 = new Tibia_Utilities.CustomControls.TUSlicePanel();
+      this.tuSlicePanel2 = new Tibia_Utilities.CustomControls.TUSlicePanel();
+      this.tuMainPanelButton1 = new Tibia_Utilities.CustomControls.TUMainPanelButton();
       this.mainTopControlPanel.SuspendLayout();
+      this.tuSlicePanel2.SuspendLayout();
       this.SuspendLayout();
+      // 
+      // tuSlicePanel1
+      // 
+      this.tuSlicePanel1.EdgeHeight = 0;
+      this.tuSlicePanel1.EdgeWidth = 0;
+      this.tuSlicePanel1.Location = new System.Drawing.Point(19, 34);
+      this.tuSlicePanel1.Name = "tuSlicePanel1";
+      this.tuSlicePanel1.OriginalImage = global::Tibia_Utilities.Properties.Resources.MainButtonPanel;
+      this.tuSlicePanel1.Size = new System.Drawing.Size(761, 41);
+      this.tuSlicePanel1.TabIndex = 1;
       // 
       // mainTopControlPanel
       // 
@@ -92,24 +105,41 @@
       this.closeButton.TabIndex = 1;
       this.closeButton.UseVisualStyleBackColor = false;
       // 
-      // tuSlicePanel1
+      // tuSlicePanel2
       // 
-      this.tuSlicePanel1.EdgeHeight = 0;
-      this.tuSlicePanel1.EdgeWidth = 0;
-      this.tuSlicePanel1.Location = new System.Drawing.Point(19, 34);
-      this.tuSlicePanel1.Name = "tuSlicePanel1";
-      this.tuSlicePanel1.OriginalImage = global::Tibia_Utilities.Properties.Resources.MainButtonPanel;
-      this.tuSlicePanel1.Size = new System.Drawing.Size(761, 41);
-      this.tuSlicePanel1.TabIndex = 1;
+      this.tuSlicePanel2.Controls.Add(this.tuMainPanelButton1);
+      this.tuSlicePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.tuSlicePanel2.Location = new System.Drawing.Point(0, 0);
+      this.tuSlicePanel2.Name = "tuSlicePanel2";
+      this.tuSlicePanel2.OriginalImage = ((System.Drawing.Image)(resources.GetObject("tuSlicePanel2.OriginalImage")));
+      this.tuSlicePanel2.Size = new System.Drawing.Size(800, 615);
+      this.tuSlicePanel2.TabIndex = 3;
+      // 
+      // tuMainPanelButton1
+      // 
+      this.tuMainPanelButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+      this.tuMainPanelButton1.FlatAppearance.BorderSize = 0;
+      this.tuMainPanelButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.tuMainPanelButton1.Icon = global::Tibia_Utilities.Properties.Resources.BPUtilities;
+      this.tuMainPanelButton1.Location = new System.Drawing.Point(110, 163);
+      this.tuMainPanelButton1.Name = "tuMainPanelButton1";
+      this.tuMainPanelButton1.PressedImage = ((System.Drawing.Image)(resources.GetObject("tuMainPanelButton1.PressedImage")));
+      this.tuMainPanelButton1.SelectedImage = ((System.Drawing.Image)(resources.GetObject("tuMainPanelButton1.SelectedImage")));
+      this.tuMainPanelButton1.SelectedText = "Seleccionado";
+      this.tuMainPanelButton1.Size = new System.Drawing.Size(39, 39);
+      this.tuMainPanelButton1.TabIndex = 0;
+      this.tuMainPanelButton1.Text = "tuMainPanelButton1";
+      this.tuMainPanelButton1.UnpressedImage = ((System.Drawing.Image)(resources.GetObject("tuMainPanelButton1.UnpressedImage")));
+      this.tuMainPanelButton1.UseVisualStyleBackColor = true;
       // 
       // Main
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.BackgroundImage = global::Tibia_Utilities.Properties.Resources.Background;
       this.ClientSize = new System.Drawing.Size(800, 615);
       this.Controls.Add(this.tuSlicePanel1);
       this.Controls.Add(this.mainTopControlPanel);
+      this.Controls.Add(this.tuSlicePanel2);
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
       this.MaximumSize = new System.Drawing.Size(800, 615);
       this.MinimumSize = new System.Drawing.Size(800, 615);
@@ -118,6 +148,7 @@
       this.Text = "Tibia Utilities";
       this.mainTopControlPanel.ResumeLayout(false);
       this.mainTopControlPanel.PerformLayout();
+      this.tuSlicePanel2.ResumeLayout(false);
       this.ResumeLayout(false);
 
     }
@@ -129,6 +160,8 @@
     private CustomControls.TUCtrlButton minimizeButton;
     private System.Windows.Forms.Label mainTitle;
     private CustomControls.TUSlicePanel tuSlicePanel1;
+    private CustomControls.TUSlicePanel tuSlicePanel2;
+    private CustomControls.TUMainPanelButton tuMainPanelButton1;
   }
 }
 

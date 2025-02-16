@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,6 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomControls\TUMainPanelButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CustomControls\TUSlicePanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -119,6 +123,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MainButtonPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainButtonPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainButtonSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainButtonUnpressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backpack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BookC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\House.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FavIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FavIcon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FavIcon1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
