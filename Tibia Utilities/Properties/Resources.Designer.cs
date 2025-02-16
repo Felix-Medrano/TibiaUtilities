@@ -71,12 +71,32 @@ namespace Tibia_Utilities.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CloseBtn {
+            get {
+                object obj = ResourceManager.GetObject("CloseBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
         /// </summary>
         internal static System.Drawing.Icon FavIcon {
             get {
                 object obj = ResourceManager.GetObject("FavIcon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MinimizeBtn {
+            get {
+                object obj = ResourceManager.GetObject("MinimizeBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

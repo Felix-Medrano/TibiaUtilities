@@ -71,7 +71,7 @@ namespace Tibia_Utilities.CustomControls
         return;
 
       // Dividir la imagen usando la función SliceImage
-      (_leftSlice, _centerSlice, _rightSlice) = ImageSlicer.SliceImage(_originalImage, _edgeWidth);
+      (_leftSlice, _centerSlice, _rightSlice) = Helper.SliceImage(_originalImage, _edgeWidth);
 
       // Forzar un redibujado del control
       Invalidate();
@@ -79,7 +79,6 @@ namespace Tibia_Utilities.CustomControls
 
     protected override void OnPaint(PaintEventArgs e)
     {
-      e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
       base.OnPaint(e);
 

@@ -49,10 +49,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomControls\TUCtrlButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CustomControls\TUTopControlBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Lib\ImageSlicer.cs" />
+    <Compile Include="Lib\ExtendedMethods.cs" />
+    <Compile Include="Lib\Helper.cs" />
+    <Compile Include="Lib\TUStrings.cs" />
+    <Compile Include="Lib\Win32.cs" />
     <Compile Include="Views\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TopBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MinimizeBtn.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

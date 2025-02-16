@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tuTopControlBar1.OriginalImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="mainTopControlPanel.OriginalImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAL4AAAAUCAYAAAAz84cVAAABgmlDQ1BJQ0MgcHJvZmlsZQAAKM+VkTlI
         A0EYhT9XRRElhVFELLZQC9FGRSxDFEVQkBjBq3B3Y6KQ3YTdBBtLwVaw8Gi8ChtrbS1sBUHwALEXrBRt
@@ -127,7 +127,7 @@
         Vl1beFC4M2Y7kq/NFTimeEOxncxaxXuqFzauOLMzSpfZwTgTTDGNjkmWNZJk6JPVEcUjIvvhCv72vH9a
         XKa41rDEMUoKGyPvR/3B7269+EB/IakxDLUvvv/RBXU7kNv2/e9j38+dQPUzXDklf+oIhj9F3y5pnYcQ
         2ISL65Jm7sLlFrQ9pQ3XyEvVMrV4HN7P5JvmofkWGhYLvRX3OX2AqHQ1eQP7B9CdkOylCu+uL+/tzzPF
-        /n4AvydyxcS6R3cAAAAJcEhZcwAADsEAAA7BAbiRa+0AAAAHdElNRQfpAg8XIwqYKYhWAAARrElEQVRo
+        /n4AvydyxcS6R3cAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAHdElNRQfpAg8XIwqYKYhWAAARrElEQVRo
         Q6Wb224cNxKG/TBBEkfS6DijOY9sLTYXgW0dbG+8V3mC2JZkSXaCvDoXXxW/JuUAu1jrgphuNlmsw1/F
         YnXPkz///LPc39+Xm5ub8unTp/Lly5fyxx9/lNu72+i7vb0td3d35e7O37vo49n19XXMoTkWWvxeV3o+
         o11dXZWPHz/Gs9u7u3LTzQva9/cxnnHSvr65Hnj7dHsb8+7uWKPx4Rryxlxo0N6//zCsTz/rf/jwYRjz
