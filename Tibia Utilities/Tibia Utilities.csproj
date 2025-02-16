@@ -49,6 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomControls\TUSlicePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CustomControls\TUCtrlButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -110,6 +113,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MinimizeBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FramedBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainButtonPanel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

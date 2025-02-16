@@ -33,6 +33,7 @@
       this.mainTitle = new System.Windows.Forms.Label();
       this.minimizeButton = new Tibia_Utilities.CustomControls.TUCtrlButton();
       this.closeButton = new Tibia_Utilities.CustomControls.TUCtrlButton();
+      this.tuSlicePanel1 = new Tibia_Utilities.CustomControls.TUSlicePanel();
       this.mainTopControlPanel.SuspendLayout();
       this.SuspendLayout();
       // 
@@ -91,12 +92,23 @@
       this.closeButton.TabIndex = 1;
       this.closeButton.UseVisualStyleBackColor = false;
       // 
+      // tuSlicePanel1
+      // 
+      this.tuSlicePanel1.EdgeHeight = 0;
+      this.tuSlicePanel1.EdgeWidth = 0;
+      this.tuSlicePanel1.Location = new System.Drawing.Point(19, 34);
+      this.tuSlicePanel1.Name = "tuSlicePanel1";
+      this.tuSlicePanel1.OriginalImage = global::Tibia_Utilities.Properties.Resources.MainButtonPanel;
+      this.tuSlicePanel1.Size = new System.Drawing.Size(761, 41);
+      this.tuSlicePanel1.TabIndex = 1;
+      // 
       // Main
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackgroundImage = global::Tibia_Utilities.Properties.Resources.Background;
       this.ClientSize = new System.Drawing.Size(800, 615);
+      this.Controls.Add(this.tuSlicePanel1);
       this.Controls.Add(this.mainTopControlPanel);
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
       this.MaximumSize = new System.Drawing.Size(800, 615);
@@ -116,6 +128,7 @@
     private CustomControls.TUCtrlButton closeButton;
     private CustomControls.TUCtrlButton minimizeButton;
     private System.Windows.Forms.Label mainTitle;
+    private CustomControls.TUSlicePanel tuSlicePanel1;
   }
 }
 

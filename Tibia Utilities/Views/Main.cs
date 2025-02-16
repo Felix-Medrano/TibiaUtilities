@@ -28,15 +28,15 @@ namespace Tibia_Utilities
 
       // Configurar la fuente
       Font safeFont = FontHelper.GetSafeFont(
-                preferredFontName: TUStrings.PREFERRED_FONT, // Fuente preferida
-                fallbackFontName: TUStrings.FLLBACK_FONT,    // Fuente alternativa
+                preferredFontName: TUStrings.Fonts.PREFERRED_FONT, // Fuente preferida
+                fallbackFontName: TUStrings.Fonts.FLLBACK_FONT,    // Fuente alternativa
                 size: 12,
                 style: FontStyle.Bold
             );
 
       mainTitle.Text = "Tibia Utilities";
       mainTitle.Font = safeFont;
-      mainTitle.ForeColor = Helper.HexToColor(TUStrings.TITLE_TEXT_COLOR);
+      mainTitle.ForeColor = Helper.HexToColor(TUStrings.Colors.TITLE_TEXT_COLOR);
 
       mainTitle.CenterControlToParent();
     }

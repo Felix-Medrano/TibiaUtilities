@@ -93,6 +93,26 @@ namespace Tibia_Utilities.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FramedBackground {
+            get {
+                object obj = ResourceManager.GetObject("FramedBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainButtonPanel {
+            get {
+                object obj = ResourceManager.GetObject("MainButtonPanel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MinimizeBtn {
             get {
                 object obj = ResourceManager.GetObject("MinimizeBtn", resourceCulture);
