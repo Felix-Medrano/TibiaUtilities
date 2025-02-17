@@ -39,16 +39,8 @@ namespace Tibia_Utilities
       closeButton.Click += CloseButton_Click;
       minimizeButton.Click += MinimizeButton_Click;
 
-      // Configurar la fuente
-      Font safeFont = FontHelper.GetSafeFont(
-                preferredFontName: TUStrings.Fonts.PREFERRED_FONT, // Fuente preferida
-                fallbackFontName: TUStrings.Fonts.FLLBACK_FONT,    // Fuente alternativa
-                size: 12,
-                style: FontStyle.Bold
-            );
-
       mainTitle.Text = "Tibia Utilities";
-      mainTitle.Font = safeFont;
+      mainTitle.Font = safeFont12;
       mainTitle.ForeColor = Helper.HexToColor(TUStrings.Colors.TITLE_TEXT_COLOR);
 
       mainTitle.CenterControlToParent();

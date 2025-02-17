@@ -2,6 +2,8 @@
 
 using Tibia_Utilities.CustomControls;
 using Tibia_Utilities.Interfaces.Panels;
+using Tibia_Utilities.Lib;
+using Tibia_Utilities.Properties;
 
 namespace Tibia_Utilities.Views.Panels
 {
@@ -10,12 +12,26 @@ namespace Tibia_Utilities.Views.Panels
     public SplitLoot()
     {
       InitializeComponent();
+
+      lblSplitLoot.Font = Helper.safeFont8;
+      lblSplitLoot.ForeColor = Helper.HexToColor(TUStrings.Colors.DESC_TEXT_COLOR);
+
+      lblSplitLoot.CenterControlToParent();
+
+      //TODO: Eventos, MouseDown, Up, para manejar la animacion de Click, com ose hace en TUMainPanelButton
+      tuSlicePanel1.Click += Button_Click;
+      lblSplitLoot.Click += Button_Click;
     }
 
     public void SetViewPanel(TUPanel panel)
     {
       panel.Controls.Clear();
       panel.Controls.Add(viewPanel);
+    }
+
+    private void Button_Click(object sender, System.EventArgs e)
+    {
+      tuSlicePanel1.OriginalImage = Resources.BorderedPanel;
     }
   }
 }

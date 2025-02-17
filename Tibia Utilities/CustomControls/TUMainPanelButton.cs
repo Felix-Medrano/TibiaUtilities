@@ -188,22 +188,15 @@ namespace Tibia_Utilities.CustomControls
 
       if (_currentState == ButtonState.Selected && !string.IsNullOrEmpty(SelectedText))
       {
-        // Configurar la fuente
-        Font safeFont = FontHelper.GetSafeFont(
-                preferredFontName: TUStrings.Fonts.PREFERRED_FONT, // Fuente preferida
-                fallbackFontName: TUStrings.Fonts.FLLBACK_FONT,    // Fuente alternativa
-                size: 10,
-                style: FontStyle.Bold
-            );
 
-        SizeF textSize = e.Graphics.MeasureString(SelectedText, safeFont);
+        SizeF textSize = e.Graphics.MeasureString(SelectedText, safeFont10);
         Color textColor = HexToColor(TUStrings.Colors.DESC_TEXT_COLOR);
         int textX = (_icon != null) ? _icon.Width + ((_selectedImage.Width - _icon.Width - (int)textSize.Width) / 2) : (Width - (int)textSize.Width) / 2;
         int textY = (Height - (int)textSize.Height) / 2;
 
         using (Brush textBrush = new SolidBrush(textColor))
         {
-          e.Graphics.DrawString(SelectedText, safeFont, textBrush, textX, textY);
+          e.Graphics.DrawString(SelectedText, safeFont10, textBrush, textX, textY);
         }
       }
     }

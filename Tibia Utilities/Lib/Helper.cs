@@ -6,6 +6,27 @@ namespace Tibia_Utilities.Lib
 {
   public static class Helper
   {
+    public static Font safeFont8 = FontHelper.GetSafeFont(
+                preferredFontName: TUStrings.Fonts.PREFERRED_FONT, // Fuente preferida
+                fallbackFontName: TUStrings.Fonts.FLLBACK_FONT,    // Fuente alternativa
+                size: 8,
+                style: FontStyle.Bold
+            );
+
+    public static Font safeFont10 = FontHelper.GetSafeFont(
+                preferredFontName: TUStrings.Fonts.PREFERRED_FONT, // Fuente preferida
+                fallbackFontName: TUStrings.Fonts.FLLBACK_FONT,    // Fuente alternativa
+                size: 10,
+                style: FontStyle.Bold
+            );
+
+    public static Font safeFont12 = FontHelper.GetSafeFont(
+                preferredFontName: TUStrings.Fonts.PREFERRED_FONT, // Fuente preferida
+                fallbackFontName: TUStrings.Fonts.FLLBACK_FONT,    // Fuente alternativa
+                size: 12,
+                style: FontStyle.Bold
+            );
+
     /// <summary>
     /// Divide una imagen en tres partes: izquierda, centro y derecha, basándose en un ancho especificado para las orillas.
     /// </summary>

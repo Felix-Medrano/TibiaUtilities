@@ -28,16 +28,15 @@
     /// </summary>
     private void InitializeComponent()
     {
-      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
       this.mainButtonPanel = new Tibia_Utilities.CustomControls.TUSlicePanel();
-      this.mainTopControlPanel = new Tibia_Utilities.CustomControls.TUTopControlBar();
       this.mainTitle = new System.Windows.Forms.Label();
       this.minimizeButton = new Tibia_Utilities.CustomControls.TUCtrlButton();
       this.closeButton = new Tibia_Utilities.CustomControls.TUCtrlButton();
       this.mainPanel = new Tibia_Utilities.CustomControls.TUSlicePanel();
+      this.mainTopControlPanel = new Tibia_Utilities.CustomControls.TUSlicePanel();
       this.mainView = new Tibia_Utilities.CustomControls.TUPanel();
-      this.mainTopControlPanel.SuspendLayout();
       this.mainPanel.SuspendLayout();
+      this.mainTopControlPanel.SuspendLayout();
       this.SuspendLayout();
       // 
       // mainButtonPanel
@@ -51,24 +50,11 @@
       this.mainButtonPanel.Size = new System.Drawing.Size(764, 41);
       this.mainButtonPanel.TabIndex = 1;
       // 
-      // mainTopControlPanel
-      // 
-      this.mainTopControlPanel.Controls.Add(this.mainTitle);
-      this.mainTopControlPanel.Controls.Add(this.minimizeButton);
-      this.mainTopControlPanel.Controls.Add(this.closeButton);
-      this.mainTopControlPanel.Dock = System.Windows.Forms.DockStyle.Top;
-      this.mainTopControlPanel.EdgeWidth = 50;
-      this.mainTopControlPanel.Location = new System.Drawing.Point(0, 0);
-      this.mainTopControlPanel.Name = "mainTopControlPanel";
-      this.mainTopControlPanel.OriginalImage = ((System.Drawing.Image)(resources.GetObject("mainTopControlPanel.OriginalImage")));
-      this.mainTopControlPanel.Size = new System.Drawing.Size(800, 20);
-      this.mainTopControlPanel.TabIndex = 0;
-      // 
       // mainTitle
       // 
       this.mainTitle.AutoSize = true;
       this.mainTitle.BackColor = System.Drawing.Color.Transparent;
-      this.mainTitle.Location = new System.Drawing.Point(327, 2);
+      this.mainTitle.Location = new System.Drawing.Point(364, 5);
       this.mainTitle.Margin = new System.Windows.Forms.Padding(0);
       this.mainTitle.Name = "mainTitle";
       this.mainTitle.Size = new System.Drawing.Size(66, 13);
@@ -84,7 +70,7 @@
       this.minimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
       this.minimizeButton.ForeColor = System.Drawing.Color.Transparent;
       this.minimizeButton.Image = global::Tibia_Utilities.Properties.Resources.MinimizeBtn;
-      this.minimizeButton.Location = new System.Drawing.Point(765, 3);
+      this.minimizeButton.Location = new System.Drawing.Point(764, 4);
       this.minimizeButton.Margin = new System.Windows.Forms.Padding(0);
       this.minimizeButton.Name = "minimizeButton";
       this.minimizeButton.Size = new System.Drawing.Size(15, 15);
@@ -99,7 +85,7 @@
       this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
       this.closeButton.ForeColor = System.Drawing.Color.Transparent;
       this.closeButton.Image = global::Tibia_Utilities.Properties.Resources.CloseBtn;
-      this.closeButton.Location = new System.Drawing.Point(780, 3);
+      this.closeButton.Location = new System.Drawing.Point(780, 4);
       this.closeButton.Margin = new System.Windows.Forms.Padding(0);
       this.closeButton.Name = "closeButton";
       this.closeButton.Size = new System.Drawing.Size(15, 15);
@@ -108,15 +94,30 @@
       // 
       // mainPanel
       // 
+      this.mainPanel.Controls.Add(this.mainTopControlPanel);
       this.mainPanel.Controls.Add(this.mainView);
       this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
       this.mainPanel.EdgeHeight = 5;
       this.mainPanel.EdgeWidth = 5;
       this.mainPanel.Location = new System.Drawing.Point(0, 0);
       this.mainPanel.Name = "mainPanel";
-      this.mainPanel.OriginalImage = ((System.Drawing.Image)(resources.GetObject("mainPanel.OriginalImage")));
+      this.mainPanel.OriginalImage = global::Tibia_Utilities.Properties.Resources.FramedBackground;
       this.mainPanel.Size = new System.Drawing.Size(800, 615);
       this.mainPanel.TabIndex = 3;
+      // 
+      // mainTopControlPanel
+      // 
+      this.mainTopControlPanel.Controls.Add(this.mainTitle);
+      this.mainTopControlPanel.Controls.Add(this.minimizeButton);
+      this.mainTopControlPanel.Controls.Add(this.closeButton);
+      this.mainTopControlPanel.Dock = System.Windows.Forms.DockStyle.Top;
+      this.mainTopControlPanel.EdgeHeight = 5;
+      this.mainTopControlPanel.EdgeWidth = 5;
+      this.mainTopControlPanel.Location = new System.Drawing.Point(0, 0);
+      this.mainTopControlPanel.Name = "mainTopControlPanel";
+      this.mainTopControlPanel.OriginalImage = global::Tibia_Utilities.Properties.Resources.TopBarS;
+      this.mainTopControlPanel.Size = new System.Drawing.Size(800, 20);
+      this.mainTopControlPanel.TabIndex = 1;
       // 
       // mainView
       // 
@@ -133,7 +134,6 @@
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(800, 615);
       this.Controls.Add(this.mainButtonPanel);
-      this.Controls.Add(this.mainTopControlPanel);
       this.Controls.Add(this.mainPanel);
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
       this.MaximumSize = new System.Drawing.Size(800, 615);
@@ -141,22 +141,21 @@
       this.Name = "Main";
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "Tibia Utilities";
+      this.mainPanel.ResumeLayout(false);
       this.mainTopControlPanel.ResumeLayout(false);
       this.mainTopControlPanel.PerformLayout();
-      this.mainPanel.ResumeLayout(false);
       this.ResumeLayout(false);
 
     }
 
     #endregion
-
-    private CustomControls.TUTopControlBar mainTopControlPanel;
     private CustomControls.TUCtrlButton closeButton;
     private CustomControls.TUCtrlButton minimizeButton;
     private System.Windows.Forms.Label mainTitle;
     private CustomControls.TUSlicePanel mainButtonPanel;
     private CustomControls.TUSlicePanel mainPanel;
     private CustomControls.TUPanel mainView;
+    private CustomControls.TUSlicePanel mainTopControlPanel;
   }
 }
 

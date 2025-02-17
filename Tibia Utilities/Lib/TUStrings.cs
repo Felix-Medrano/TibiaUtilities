@@ -6,6 +6,8 @@
     {
       public const string DESC_TEXT_COLOR = "#C0C0C0";
       public const string TITLE_TEXT_COLOR = "#909090";
+      public const string NEGA_TEXT_COLOR = "#FF0000";
+      public const string POSI_TEXT_COLOR = "#008000";
     }
 
     public class Fonts
