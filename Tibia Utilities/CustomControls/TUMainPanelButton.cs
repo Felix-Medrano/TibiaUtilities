@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
+using Tibia_Utilities.Interfaces.Panels;
 using Tibia_Utilities.Lib;
 
 using static Tibia_Utilities.Lib.Helper;
@@ -11,7 +12,7 @@ namespace Tibia_Utilities.CustomControls
 {
   public class TUMainPanelButton : Button
   {
-    private enum ButtonState { Unpressed, Pressed, Selected }
+    public enum ButtonState { Unpressed, Pressed, Selected }
 
     private ButtonState _currentState = ButtonState.Unpressed;
     private Image _unpressedImage;
@@ -76,17 +77,25 @@ namespace Tibia_Utilities.CustomControls
     [Description("Texto que se mostrará cuando el botón esté seleccionado.")]
     public string SelectedText { get; set; } = "Seleccionado";
 
+    public ButtonState CurrentState
+    {
+      get => _currentState;
+    }
+
+    public IViewPanel Panel { get; set; }
+
     public TUMainPanelButton()
     {
       DoubleBuffered = true;
       FlatStyle = FlatStyle.Flat;
       FlatAppearance.BorderSize = 0;
-      Cursor = Cursors.Hand;
       Text = string.Empty;
 
       UnpressedImage = Properties.Resources.MainButtonUnpressed;
       PressedImage = Properties.Resources.MainButtonPressed;
       SelectedImage = Properties.Resources.MainButtonSelected;
+
+      Size = UnpressedImage.Size;
 
       MouseDown += Button_MouseDown;
       MouseUp += Button_MouseUp;
@@ -209,6 +218,17 @@ namespace Tibia_Utilities.CustomControls
         _icon?.Dispose();
       }
       base.Dispose(disposing);
+    }
+
+    /// <summary>
+    /// Establece si el botón está seleccionado o no.
+    /// </summary>
+    /// <param name="selected"></param>
+    public void SetSelected(bool selected)
+    {
+      _currentState = selected ? ButtonState.Selected : ButtonState.Unpressed;
+      Size = _currentState == ButtonState.Selected ? _selectedImage.Size : _unpressedImage.Size;
+      Invalidate();
     }
   }
 }

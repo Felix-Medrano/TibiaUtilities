@@ -93,6 +93,16 @@ namespace Tibia_Utilities.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BorderedPanel {
+            get {
+                object obj = ResourceManager.GetObject("BorderedPanel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BPUtilities {
             get {
                 object obj = ResourceManager.GetObject("BPUtilities", resourceCulture);
@@ -136,6 +146,16 @@ namespace Tibia_Utilities.Properties {
         internal static System.Drawing.Bitmap House {
             get {
                 object obj = ResourceManager.GetObject("House", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap informacion {
+            get {
+                object obj = ResourceManager.GetObject("informacion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +216,16 @@ namespace Tibia_Utilities.Properties {
         internal static System.Drawing.Bitmap MinimizeBtn {
             get {
                 object obj = ResourceManager.GetObject("MinimizeBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RaisedPanel {
+            get {
+                object obj = ResourceManager.GetObject("RaisedPanel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -14,5 +14,13 @@
       public const string FLLBACK_FONT = "Arial";
     }
 
+    public class Panels
+    {
+      public const string HOUSES = "Houses";
+      public const string LOOT = "Loot";
+      public const string MAIN = "Principal";
+      public const string SPLIT_LOOT = "Split Loot";
+    }
+
   }
 }
