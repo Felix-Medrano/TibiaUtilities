@@ -221,6 +221,15 @@ namespace Tibia_Utilities.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Press {
+            get {
+                return ResourceManager.GetStream("Press", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap RaisedPanel {
@@ -257,6 +266,15 @@ namespace Tibia_Utilities.Properties {
             get {
                 object obj = ResourceManager.GetObject("TopBarS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Unpress {
+            get {
+                return ResourceManager.GetStream("Unpress", resourceCulture);
             }
         }
     }

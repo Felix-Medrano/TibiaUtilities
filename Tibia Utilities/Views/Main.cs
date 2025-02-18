@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
+using Tibia_Utilities.Core;
 using Tibia_Utilities.CustomControls;
 using Tibia_Utilities.Lib;
 using Tibia_Utilities.Models;
@@ -47,6 +48,7 @@ namespace Tibia_Utilities
 
       currentButton?.Panel?.SetViewPanel(mainView);
 
+      SoundManager.Volume = 0.5f;
     }
 
     #endregion

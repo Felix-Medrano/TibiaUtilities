@@ -20,6 +20,8 @@ namespace Tibia_Utilities.CustomControls
     private Image _selectedImage;
     private Image _icon;
 
+    public bool playUnpressedSound = true;
+
     [Browsable(true)]
     [Category("Appearance")]
     [Description("Imagen para el estado Unpressed.")]
@@ -117,6 +119,7 @@ namespace Tibia_Utilities.CustomControls
       {
         _currentState = ButtonState.Pressed;
         Invalidate();
+        Sounds.PlayPressButtonSound();
       }
     }
 
@@ -127,8 +130,8 @@ namespace Tibia_Utilities.CustomControls
         if (ClientRectangle.Contains(PointToClient(Cursor.Position)))
         {
           _currentState = _currentState == ButtonState.Selected ? ButtonState.Unpressed : ButtonState.Selected;
-          if (_currentState == ButtonState.Selected)
-            OnClick(EventArgs.Empty);
+          if (_currentState == ButtonState.Selected) { }
+          OnClick(EventArgs.Empty);
         }
         else
         {
@@ -136,7 +139,15 @@ namespace Tibia_Utilities.CustomControls
         }
 
         Invalidate();
+        Sounds.PlayReleaseButtonSound();
       }
+
+      if (_currentState == ButtonState.Selected && playUnpressedSound)
+      {
+        Sounds.PlayReleaseButtonSound();
+        playUnpressedSound = false;
+      }
+
     }
 
     private void Button_MouseLeave(object sender, EventArgs e)
@@ -159,6 +170,7 @@ namespace Tibia_Utilities.CustomControls
         case ButtonState.Unpressed:
           backgroundImage = _unpressedImage;
           Size = _unpressedImage.Size;
+          playUnpressedSound = true;
           break;
         case ButtonState.Pressed:
           backgroundImage = _pressedImage;

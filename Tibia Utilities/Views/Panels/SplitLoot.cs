@@ -1,8 +1,10 @@
 ﻿using System.Windows.Forms;
 
 using Tibia_Utilities.CustomControls;
+using Tibia_Utilities.CustomControls.SplitLoot;
 using Tibia_Utilities.Interfaces.Panels;
 using Tibia_Utilities.Lib;
+using Tibia_Utilities.Models;
 using Tibia_Utilities.Properties;
 
 namespace Tibia_Utilities.Views.Panels
@@ -32,6 +34,20 @@ namespace Tibia_Utilities.Views.Panels
     private void Button_Click(object sender, System.EventArgs e)
     {
       tuSlicePanel1.OriginalImage = Resources.BorderedPanel;
+
+      var partyLoot = new PartyLootModel()
+      {
+        Name = "Player 1",
+        Loot = -1000,
+        Supplies = 100,
+        Balance = -100,
+        Damage = 1000,
+        Healing = 1000
+      };
+
+      var partyLootData = new PartyLootData(partyLoot);
+      partyLootData.Location = new System.Drawing.Point(10, 10);
+      leftPanel.Controls.Add(partyLootData);
     }
   }
 }

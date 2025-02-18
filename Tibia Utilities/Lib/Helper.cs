@@ -2,6 +2,9 @@
 using System.Drawing;
 using System.Drawing.Text;
 
+using Tibia_Utilities.Core;
+using Tibia_Utilities.Properties;
+
 namespace Tibia_Utilities.Lib
 {
   public static class Helper
@@ -141,6 +144,19 @@ namespace Tibia_Utilities.Lib
       {
         string fontName = IsFontInstalled(preferredFontName) ? preferredFontName : fallbackFontName;
         return new Font(fontName, size, style);
+      }
+    }
+
+    public static class Sounds
+    {
+      public static void PlayPressButtonSound()
+      {
+        SoundManager.PlaySoundFromResources(Resources.Press);
+      }
+
+      public static void PlayReleaseButtonSound()
+      {
+        SoundManager.PlaySoundFromResources(Resources.Unpress);
       }
     }
   }

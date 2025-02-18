@@ -2,6 +2,8 @@
 using System.Drawing;
 using System.Windows.Forms;
 
+using Tibia_Utilities.Lib;
+
 namespace Tibia_Utilities.CustomControls
 {
   public class TUCtrlButton : Button
@@ -49,6 +51,8 @@ namespace Tibia_Utilities.CustomControls
         _isPressed = true;
         Size = new Size(Size.Width - offset, Size.Height - offset); // Reducir tamaño
         Location = new Point(Location.X + offset, Location.Y + offset); // Desplazar offsetpx hacia abajo-derecha
+
+        Helper.Sounds.PlayPressButtonSound(); // Reproducir sonido de presionar botón
       }
     }
 
@@ -66,6 +70,8 @@ namespace Tibia_Utilities.CustomControls
         {
           OnClick(EventArgs.Empty); // Activar el evento Click
         }
+
+        Helper.Sounds.PlayReleaseButtonSound(); // Reproducir sonido de soltar botón
       }
     }
 
