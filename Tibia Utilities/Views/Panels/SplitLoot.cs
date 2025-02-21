@@ -107,15 +107,12 @@ namespace Tibia_Utilities.Views.Panels
 
     private void MouseWheelEvent(object sender, MouseEventArgs e)
     {
-      Console.WriteLine("MouseWheelEvent");
       OnMouseWheel(e);
     }
 
 
     private void TopPanel_Click(object sender, EventArgs e)
     {
-      Console.WriteLine("TopPanel_Click");
-
       ViewPortUpdate();
     }
 
@@ -259,8 +256,6 @@ namespace Tibia_Utilities.Views.Panels
 
     private void HideButton_Click(object sender, EventArgs e)
     {
-      Console.WriteLine("HideButton_Click");
-
       var obj = (PartyPlayerData)sender;
 
       if (obj.PartyLootModel.IsHide)
