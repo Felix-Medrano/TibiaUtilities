@@ -127,11 +127,10 @@ namespace Tibia_Utilities.Views.Panels
       else
         profitEach = players.Sum(p => p.Balance) / players.Count;
 
-
-
       transferPlayerViewport.Controls.Clear();
 
       int offsetY = 0;
+      int transferViewPortHeight = 0;
 
       foreach (var transfer in splitTransfers)
       {
@@ -140,10 +139,11 @@ namespace Tibia_Utilities.Views.Panels
         playerTransfer.Location = new Point(0, offsetY);
         offsetY += playerTransfer.Height;
 
+        transferViewPortHeight += playerTransfer.Height;
         transferPlayerViewport.Controls.Add(playerTransfer);
 
-        transferPlayerViewport.Height = playerTransfer.Bottom;
       }
+      transferPlayerViewport.Height = transferViewPortHeight;
 
       PictureBox coins = new PictureBox()
       {
