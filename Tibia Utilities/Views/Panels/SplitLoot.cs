@@ -120,7 +120,12 @@ namespace Tibia_Utilities.Views.Panels
     {
 
       List<TransferModel> splitTransfers = CalculateSplit(players);
-      int profitEach = players.Sum(p => p.Balance) / players.Count;
+      int profitEach;
+
+      if (players.Count == 0)
+        profitEach = 0;
+      else
+        profitEach = players.Sum(p => p.Balance) / players.Count;
 
 
 
@@ -197,7 +202,12 @@ namespace Tibia_Utilities.Views.Panels
       // Calcular el profit promedio por jugador
       int totalBalance = players.Sum(p => p.Balance);
       int playerCount = players.Count;
-      int profitEach = totalBalance / playerCount;
+      int profitEach;
+
+      if (playerCount == 0)
+        profitEach = 0;
+      else
+        profitEach = totalBalance / playerCount;
 
       // Crear una lista de diferencias usando la clase PlayerDifference
       var differences = players.Select(p => new PlayerDifferenceModel
@@ -289,10 +299,9 @@ namespace Tibia_Utilities.Views.Panels
         if (control is PartyPlayerData player)
         {
           player.PanelClick -= TopPanel_Click;
-          player.PanelClick -= TopPanel_Click;
           player.HideClick -= HideButton_Click;
           player.MouseWheel -= MouseWheelEvent;
-          player.Location = new Point(0, 0);
+          player.Reset();
           playerPool.Return(player);
         }
       }

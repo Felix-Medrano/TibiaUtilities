@@ -14,6 +14,8 @@ namespace Tibia_Utilities.CustomControls.SplitLoot
     public EventHandler PanelClick;
     public EventHandler HideClick;
 
+    private const int MAX_HEIGHT = 150;
+
     private PartyLootModel _partyLootModel;
 
     private ToolTip toolTip;
@@ -150,6 +152,29 @@ namespace Tibia_Utilities.CustomControls.SplitLoot
       toolTip.SetToolTip(hideBtn, tooltipText);
 
       HideClick?.Invoke(this, e);
+    }
+
+    public void Reset()
+    {
+      hideData = false;
+      _partyLootModel.IsHide = false;
+      hideBtn.Image = Properties.Resources.hide;
+      Height = MAX_HEIGHT;
+
+      lblName.Text =
+      lblLoot.Text =
+      lblLootCant.Text =
+      lblSupplies.Text =
+      lblSuppliesCant.Text =
+      lblBalance.Text =
+      lblBalanceCant.Text =
+      lblDamage.Text =
+      lblDamageCant.Text =
+      lblHealing.Text =
+      lblHealingCant.Text = string.Empty;
+
+      Location = new Point(0, 0);
+      SetLblConfig();
     }
   }
 }
