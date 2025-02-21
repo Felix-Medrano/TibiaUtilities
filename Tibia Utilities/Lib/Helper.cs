@@ -16,6 +16,13 @@ namespace Tibia_Utilities.Lib
                 style: FontStyle.Bold
             );
 
+    public static Font safeFont8Strike = FontHelper.GetSafeFont(
+                preferredFontName: TUStrings.Fonts.PREFERRED_FONT, // Fuente preferida
+                fallbackFontName: TUStrings.Fonts.FLLBACK_FONT,    // Fuente alternativa
+                size: 8,
+                style: FontStyle.Bold | FontStyle.Strikeout
+            );
+
     public static Font safeFont10 = FontHelper.GetSafeFont(
                 preferredFontName: TUStrings.Fonts.PREFERRED_FONT, // Fuente preferida
                 fallbackFontName: TUStrings.Fonts.FLLBACK_FONT,    // Fuente alternativa
@@ -110,6 +117,15 @@ namespace Tibia_Utilities.Lib
 
       // Crear y devolver el objeto Color
       return Color.FromArgb(alpha, red, green, blue);
+    }
+
+    public static string FormatTibiaGold(int amount)
+    {
+      if (amount >= 1_000_000)
+        return $"{amount / 1_000_000}kk";
+      else if (amount >= 1_000)
+        return $"{amount / 1_000}k";
+      return $"{amount}gp";
     }
 
     public static class FontHelper

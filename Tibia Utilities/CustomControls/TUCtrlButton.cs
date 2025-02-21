@@ -35,6 +35,8 @@ namespace Tibia_Utilities.CustomControls
 
       FlatStyle = FlatStyle.Flat; // Estilo plano
       FlatAppearance.BorderSize = 0; // Sin borde
+      FlatAppearance.MouseOverBackColor = Color.Transparent; // Fondo transparente al pasar el cursor
+      FlatAppearance.MouseDownBackColor = Color.Transparent; // Fondo transparente al presionar
       Cursor = Cursors.Hand; // Cambiar el cursor al pasar sobre el botón
 
       // Suscribir eventos de mouse
@@ -64,12 +66,6 @@ namespace Tibia_Utilities.CustomControls
         _isPressed = false;
         Size = new Size(Size.Width + offset, Size.Height + offset); // Restaurar tamaño
         Location = new Point(Location.X - offset, Location.Y - offset); // Restaurar posición original
-
-        // Verificar si el cursor sigue dentro del botón antes de activar el evento Click
-        if (ClientRectangle.Contains(PointToClient(Cursor.Position)))
-        {
-          OnClick(EventArgs.Empty); // Activar el evento Click
-        }
 
         Helper.Sounds.PlayReleaseButtonSound(); // Reproducir sonido de soltar botón
       }

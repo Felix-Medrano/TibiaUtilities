@@ -136,11 +136,23 @@
   <data name="CloseBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CloseBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DownScrollBarButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DownScrollBarButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FavIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FavIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FramedBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FramedBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoldCoin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoldCoin.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="House" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\House.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,13 +187,25 @@
   <data name="SckLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SckLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="show" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\show.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ThumbScrollBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ThumbScrollBar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TopBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TopBar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TopBarS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TopBarS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TrackVScrollBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TrackVScrollBar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Unpress" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Unpress.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UpScrollBarButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpScrollBarButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

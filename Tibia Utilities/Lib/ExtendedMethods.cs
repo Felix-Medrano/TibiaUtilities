@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace Tibia_Utilities.Lib
@@ -25,6 +26,26 @@ namespace Tibia_Utilities.Lib
 
       // Establecer la nueva ubicación del control
       control.Location = new Point(x, y);
+    }
+
+    public static void UnsubscribeAllEvents(this object obj)
+    {
+      if (obj == null) throw new ArgumentNullException(nameof(obj));
+
+      // Obtener todos los eventos del tipo del objeto
+      var events = obj.GetType().GetEvents(BindingFlags.Instance | BindingFlags.Public);
+
+      foreach (var eventInfo in events)
+      {
+        // Obtener el campo subyacente del evento (el campo de delegado)
+        var field = obj.GetType().GetField(eventInfo.Name, BindingFlags.Instance | BindingFlags.NonPublic);
+
+        if (field != null)
+        {
+          // Limpiar el campo de delegado asignándole null
+          field.SetValue(obj, null);
+        }
+      }
     }
   }
 }

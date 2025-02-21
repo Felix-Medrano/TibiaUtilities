@@ -1,20 +1,32 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 using Tibia_Utilities.Lib;
-using Tibia_Utilities.Models;
+using Tibia_Utilities.Models.SplitLoot;
 
 using static Tibia_Utilities.Lib.Helper;
 
 namespace Tibia_Utilities.CustomControls.SplitLoot
 {
-  public partial class PartyLootData : UserControl
+  public partial class PartyPlayerData : UserControl
   {
+    public EventHandler PanelClick;
+    public EventHandler HideClick;
+
     private PartyLootModel _partyLootModel;
 
-    private bool minimized = false;
+    private ToolTip toolTip;
 
-    public PartyLootData()
+    private bool minimized = false;
+    private bool hideData = false;
+
+    public PartyLootModel PartyLootModel
+    {
+      get => _partyLootModel;
+    }
+
+    public PartyPlayerData()
     {
       InitializeComponent();
 
@@ -30,21 +42,26 @@ namespace Tibia_Utilities.CustomControls.SplitLoot
         Damage = 1000000,
         Healing = 123456789
       };
-      SetData();
+
+      topPanel.Click += TopPanel_Click;
+      lblName.Click += TopPanel_Click;
     }
 
-    public PartyLootData(PartyLootModel model)
+    public void SetData(PartyLootModel model)
     {
-      InitializeComponent();
-
-      DoubleBuffered = true;
       _partyLootModel = model;
 
-      SetData();
-    }
+      toolTip = new ToolTip
+      {
+        AutoPopDelay = 5000,
+        InitialDelay = 500,
+        ReshowDelay = 200,
+        ShowAlways = true
+      };
 
-    private void SetData()
-    {
+      string tooltipText = "Ocultar jugador";
+      toolTip.SetToolTip(hideBtn, tooltipText);
+
       if (_partyLootModel != null)
       {
         lblName.Text = _partyLootModel.Name;
@@ -55,7 +72,15 @@ namespace Tibia_Utilities.CustomControls.SplitLoot
         lblHealingCant.Text = _partyLootModel.Healing.ToString("N0");
       }
 
+      SetLblConfig();
+    }
+
+    private void SetLblConfig()
+    {
+      var font = !hideData ? safeFont8 : safeFont8Strike;
+
       lblName.Font = safeFont12;
+
       lblLoot.Font =
       lblLootCant.Font =
       lblSupplies.Font =
@@ -65,9 +90,12 @@ namespace Tibia_Utilities.CustomControls.SplitLoot
       lblDamage.Font =
       lblDamageCant.Font =
       lblHealing.Font =
-      lblHealingCant.Font = safeFont8;
+      lblHealingCant.Font = font;
 
       lblName.ForeColor = HexToColor(TUStrings.Colors.TITLE_TEXT_COLOR);
+
+      var color = !hideData ? HexToColor(TUStrings.Colors.DESC_TEXT_COLOR) : Color.Black;
+
       lblLoot.ForeColor =
       lblLootCant.ForeColor =
       lblSupplies.ForeColor =
@@ -75,33 +103,53 @@ namespace Tibia_Utilities.CustomControls.SplitLoot
       lblDamage.ForeColor =
       lblDamageCant.ForeColor =
       lblHealing.ForeColor =
-      lblHealingCant.ForeColor = HexToColor(TUStrings.Colors.DESC_TEXT_COLOR);
+      lblHealingCant.ForeColor = color;
 
       //Cambio de colores
-      //TODO: Cambiar colores dependiendo de la cantidad de loot
-      lblSuppliesCant.ForeColor = _partyLootModel.Supplies switch
+
+      var suppliesColor = !hideData ? _partyLootModel.Supplies switch
       {
         > 0 => HexToColor(TUStrings.Colors.POSI_TEXT_COLOR),
         < 0 => HexToColor(TUStrings.Colors.NEGA_TEXT_COLOR),
         _ => HexToColor(TUStrings.Colors.DESC_TEXT_COLOR)
-      };
-      lblBalanceCant.ForeColor = _partyLootModel.Balance switch
+      } : color;
+
+      lblSuppliesCant.ForeColor = suppliesColor;
+
+      var balanceColor = !hideData ? _partyLootModel.Balance switch
       {
         > 0 => HexToColor(TUStrings.Colors.POSI_TEXT_COLOR),
         < 0 => HexToColor(TUStrings.Colors.NEGA_TEXT_COLOR),
         _ => HexToColor(TUStrings.Colors.DESC_TEXT_COLOR)
-      };
+      } : color;
+
+      lblBalanceCant.ForeColor = balanceColor;
 
       lblName.CenterControlToParent();
-
-      topPanel.Click += TopPanel_Click;
-      lblName.Click += TopPanel_Click;
     }
 
     private void TopPanel_Click(object sender, EventArgs e)
     {
       Height = minimized ? 150 : topPanel.Height + 5;
       minimized = !minimized;
+      PanelClick?.Invoke(this, e);
+    }
+
+    private void hideBtn_Click(object sender, EventArgs e)
+    {
+      hideData = !hideData;
+
+      _partyLootModel.IsHide = !_partyLootModel.IsHide;
+
+      hideBtn.Image = !hideData ? Properties.Resources.hide : Properties.Resources.show;
+
+      SetLblConfig();
+      Update();
+
+      string tooltipText = hideData ? "Mostrar jugador" : "Ocultar jugador";
+      toolTip.SetToolTip(hideBtn, tooltipText);
+
+      HideClick?.Invoke(this, e);
     }
   }
 }

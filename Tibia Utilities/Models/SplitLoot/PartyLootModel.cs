@@ -1,7 +1,8 @@
-﻿namespace Tibia_Utilities.Models
+﻿namespace Tibia_Utilities.Models.SplitLoot
 {
   public class PartyLootModel
   {
+    public bool IsHide { get; set; }
     public string Name { get; set; }
     public int Loot { get; set; }
     public int Supplies { get; set; }

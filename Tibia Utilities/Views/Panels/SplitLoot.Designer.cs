@@ -30,13 +30,22 @@
     {
       this.viewPanel = new Tibia_Utilities.CustomControls.TUPanel();
       this.rightPanel = new Tibia_Utilities.CustomControls.TUSlicePanel();
+      this.rightContainer = new Tibia_Utilities.CustomControls.TUPanel();
+      this.rightScrollBar = new Tibia_Utilities.CustomControls.TibiaVScrollBar();
+      this.transferPlayerViewport = new Tibia_Utilities.CustomControls.TUPanel();
       this.leftPanel = new Tibia_Utilities.CustomControls.TUSlicePanel();
+      this.container = new Tibia_Utilities.CustomControls.TUPanel();
+      this.leftScrollBar = new Tibia_Utilities.CustomControls.TibiaVScrollBar();
+      this.partyPlayerViewPort = new Tibia_Utilities.CustomControls.TUPanel();
       this.topPanel = new Tibia_Utilities.CustomControls.TUSlicePanel();
-      this.tuSlicePanel1 = new Tibia_Utilities.CustomControls.TUSlicePanel();
-      this.lblSplitLoot = new System.Windows.Forms.Label();
+      this.clearBtn = new Tibia_Utilities.CustomControls.TUSliceButton();
+      this.splitLootBtn = new Tibia_Utilities.CustomControls.TUSliceButton();
       this.viewPanel.SuspendLayout();
+      this.rightPanel.SuspendLayout();
+      this.rightContainer.SuspendLayout();
+      this.leftPanel.SuspendLayout();
+      this.container.SuspendLayout();
       this.topPanel.SuspendLayout();
-      this.tuSlicePanel1.SuspendLayout();
       this.SuspendLayout();
       // 
       // viewPanel
@@ -52,27 +61,84 @@
       // 
       // rightPanel
       // 
+      this.rightPanel.Controls.Add(this.rightContainer);
       this.rightPanel.EdgeHeight = 5;
       this.rightPanel.EdgeWidth = 5;
       this.rightPanel.Location = new System.Drawing.Point(292, 66);
       this.rightPanel.Name = "rightPanel";
-      this.rightPanel.OriginalImage = global::Tibia_Utilities.Properties.Resources.BorderedPanel;
+      this.rightPanel.OriginalImage = global::Tibia_Utilities.Properties.Resources.FramedBackground;
       this.rightPanel.Size = new System.Drawing.Size(472, 409);
       this.rightPanel.TabIndex = 2;
       // 
+      // rightContainer
+      // 
+      this.rightContainer.Controls.Add(this.rightScrollBar);
+      this.rightContainer.Controls.Add(this.transferPlayerViewport);
+      this.rightContainer.Location = new System.Drawing.Point(4, 4);
+      this.rightContainer.Name = "rightContainer";
+      this.rightContainer.Size = new System.Drawing.Size(462, 400);
+      this.rightContainer.TabIndex = 1;
+      // 
+      // rightScrollBar
+      // 
+      this.rightScrollBar.Location = new System.Drawing.Point(446, 0);
+      this.rightScrollBar.Name = "rightScrollBar";
+      this.rightScrollBar.Size = new System.Drawing.Size(16, 400);
+      this.rightScrollBar.Step = 10;
+      this.rightScrollBar.TabIndex = 1;
+      this.rightScrollBar.viewContainer = null;
+      this.rightScrollBar.viewPort = null;
+      this.rightScrollBar.Visible = false;
+      // 
+      // transferPlayerViewport
+      // 
+      this.transferPlayerViewport.Location = new System.Drawing.Point(0, 0);
+      this.transferPlayerViewport.Name = "transferPlayerViewport";
+      this.transferPlayerViewport.Size = new System.Drawing.Size(446, 0);
+      this.transferPlayerViewport.TabIndex = 0;
+      // 
       // leftPanel
       // 
+      this.leftPanel.Controls.Add(this.container);
       this.leftPanel.EdgeHeight = 5;
       this.leftPanel.EdgeWidth = 5;
       this.leftPanel.Location = new System.Drawing.Point(0, 66);
       this.leftPanel.Name = "leftPanel";
-      this.leftPanel.OriginalImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
+      this.leftPanel.OriginalImage = global::Tibia_Utilities.Properties.Resources.FramedBackground;
       this.leftPanel.Size = new System.Drawing.Size(286, 409);
       this.leftPanel.TabIndex = 1;
       // 
+      // container
+      // 
+      this.container.Controls.Add(this.leftScrollBar);
+      this.container.Controls.Add(this.partyPlayerViewPort);
+      this.container.Location = new System.Drawing.Point(4, 4);
+      this.container.Name = "container";
+      this.container.Size = new System.Drawing.Size(277, 400);
+      this.container.TabIndex = 0;
+      // 
+      // leftScrollBar
+      // 
+      this.leftScrollBar.Location = new System.Drawing.Point(261, 0);
+      this.leftScrollBar.Name = "leftScrollBar";
+      this.leftScrollBar.Size = new System.Drawing.Size(16, 400);
+      this.leftScrollBar.Step = 10;
+      this.leftScrollBar.TabIndex = 1;
+      this.leftScrollBar.viewContainer = null;
+      this.leftScrollBar.viewPort = null;
+      // 
+      // partyPlayerViewPort
+      // 
+      this.partyPlayerViewPort.Location = new System.Drawing.Point(0, 0);
+      this.partyPlayerViewPort.Name = "partyPlayerViewPort";
+      this.partyPlayerViewPort.Size = new System.Drawing.Size(261, 0);
+      this.partyPlayerViewPort.TabIndex = 0;
+      this.partyPlayerViewPort.Resize += new System.EventHandler(this.partyPlayerViewPort_Resize);
+      // 
       // topPanel
       // 
-      this.topPanel.Controls.Add(this.tuSlicePanel1);
+      this.topPanel.Controls.Add(this.clearBtn);
+      this.topPanel.Controls.Add(this.splitLootBtn);
       this.topPanel.EdgeHeight = 5;
       this.topPanel.EdgeWidth = 5;
       this.topPanel.Location = new System.Drawing.Point(0, 0);
@@ -81,26 +147,31 @@
       this.topPanel.Size = new System.Drawing.Size(764, 60);
       this.topPanel.TabIndex = 0;
       // 
-      // tuSlicePanel1
+      // clearBtn
       // 
-      this.tuSlicePanel1.Controls.Add(this.lblSplitLoot);
-      this.tuSlicePanel1.EdgeHeight = 2;
-      this.tuSlicePanel1.EdgeWidth = 2;
-      this.tuSlicePanel1.Location = new System.Drawing.Point(150, 21);
-      this.tuSlicePanel1.Name = "tuSlicePanel1";
-      this.tuSlicePanel1.OriginalImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
-      this.tuSlicePanel1.Size = new System.Drawing.Size(88, 22);
-      this.tuSlicePanel1.TabIndex = 0;
+      this.clearBtn.Location = new System.Drawing.Point(105, 16);
+      this.clearBtn.Name = "clearBtn";
+      this.clearBtn.OriginalImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
+      this.clearBtn.PressedImage = global::Tibia_Utilities.Properties.Resources.BorderedPanel;
+      this.clearBtn.Size = new System.Drawing.Size(87, 26);
+      this.clearBtn.TabIndex = 1;
+      this.clearBtn.Text = "Clear";
+      this.clearBtn.UnpressedImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
+      this.clearBtn.UseVisualStyleBackColor = true;
+      this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
       // 
-      // lblSplitLoot
+      // splitLootBtn
       // 
-      this.lblSplitLoot.AutoSize = true;
-      this.lblSplitLoot.BackColor = System.Drawing.Color.Transparent;
-      this.lblSplitLoot.Location = new System.Drawing.Point(17, 4);
-      this.lblSplitLoot.Name = "lblSplitLoot";
-      this.lblSplitLoot.Size = new System.Drawing.Size(51, 13);
-      this.lblSplitLoot.TabIndex = 0;
-      this.lblSplitLoot.Text = "Split Loot";
+      this.splitLootBtn.Location = new System.Drawing.Point(12, 16);
+      this.splitLootBtn.Name = "splitLootBtn";
+      this.splitLootBtn.OriginalImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
+      this.splitLootBtn.PressedImage = global::Tibia_Utilities.Properties.Resources.BorderedPanel;
+      this.splitLootBtn.Size = new System.Drawing.Size(87, 26);
+      this.splitLootBtn.TabIndex = 0;
+      this.splitLootBtn.Text = "Split Loot";
+      this.splitLootBtn.UnpressedImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
+      this.splitLootBtn.UseVisualStyleBackColor = true;
+      this.splitLootBtn.Click += new System.EventHandler(this.Button_Click);
       // 
       // SplitLoot
       // 
@@ -113,9 +184,11 @@
       this.Name = "SplitLoot";
       this.Text = "Form";
       this.viewPanel.ResumeLayout(false);
+      this.rightPanel.ResumeLayout(false);
+      this.rightContainer.ResumeLayout(false);
+      this.leftPanel.ResumeLayout(false);
+      this.container.ResumeLayout(false);
       this.topPanel.ResumeLayout(false);
-      this.tuSlicePanel1.ResumeLayout(false);
-      this.tuSlicePanel1.PerformLayout();
       this.ResumeLayout(false);
 
     }
@@ -126,7 +199,13 @@
     private CustomControls.TUSlicePanel topPanel;
     private CustomControls.TUSlicePanel leftPanel;
     private CustomControls.TUSlicePanel rightPanel;
-    private CustomControls.TUSlicePanel tuSlicePanel1;
-    private System.Windows.Forms.Label lblSplitLoot;
+    private CustomControls.TUPanel partyPlayerViewPort;
+    private CustomControls.TibiaVScrollBar leftScrollBar;
+    private CustomControls.TUPanel container;
+    private CustomControls.TUPanel rightContainer;
+    private CustomControls.TibiaVScrollBar rightScrollBar;
+    private CustomControls.TUPanel transferPlayerViewport;
+    private CustomControls.TUSliceButton clearBtn;
+    private CustomControls.TUSliceButton splitLootBtn;
   }
 }

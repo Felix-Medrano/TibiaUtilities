@@ -1,6 +1,6 @@
 ﻿namespace Tibia_Utilities.CustomControls.SplitLoot
 {
-  partial class PartyLootData
+  partial class PartyPlayerData
   {
     /// <summary> 
     /// Variable del diseñador necesaria.
@@ -28,8 +28,8 @@
     /// </summary>
     private void InitializeComponent()
     {
-      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PartyLootData));
-      this.backgroundPanel = new Tibia_Utilities.CustomControls.TUSlicePanel();
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PartyPlayerData));
+      this.viewPort = new Tibia_Utilities.CustomControls.TUSlicePanel();
       this.lblHealingCant = new System.Windows.Forms.Label();
       this.lblHealing = new System.Windows.Forms.Label();
       this.lblDamageCant = new System.Windows.Forms.Label();
@@ -41,36 +41,37 @@
       this.lblLootCant = new System.Windows.Forms.Label();
       this.lblLoot = new System.Windows.Forms.Label();
       this.topPanel = new Tibia_Utilities.CustomControls.TUSlicePanel();
+      this.hideBtn = new Tibia_Utilities.CustomControls.TUCtrlButton();
       this.lblName = new System.Windows.Forms.Label();
-      this.backgroundPanel.SuspendLayout();
+      this.viewPort.SuspendLayout();
       this.topPanel.SuspendLayout();
       this.SuspendLayout();
       // 
-      // backgroundPanel
+      // viewPort
       // 
-      this.backgroundPanel.Controls.Add(this.lblHealingCant);
-      this.backgroundPanel.Controls.Add(this.lblHealing);
-      this.backgroundPanel.Controls.Add(this.lblDamageCant);
-      this.backgroundPanel.Controls.Add(this.lblDamage);
-      this.backgroundPanel.Controls.Add(this.lblBalanceCant);
-      this.backgroundPanel.Controls.Add(this.lblBalance);
-      this.backgroundPanel.Controls.Add(this.lblSuppliesCant);
-      this.backgroundPanel.Controls.Add(this.lblSupplies);
-      this.backgroundPanel.Controls.Add(this.lblLootCant);
-      this.backgroundPanel.Controls.Add(this.lblLoot);
-      this.backgroundPanel.Controls.Add(this.topPanel);
-      this.backgroundPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.backgroundPanel.Location = new System.Drawing.Point(0, 0);
-      this.backgroundPanel.Name = "backgroundPanel";
-      this.backgroundPanel.OriginalImage = ((System.Drawing.Image)(resources.GetObject("backgroundPanel.OriginalImage")));
-      this.backgroundPanel.Size = new System.Drawing.Size(260, 150);
-      this.backgroundPanel.TabIndex = 0;
+      this.viewPort.Controls.Add(this.lblHealingCant);
+      this.viewPort.Controls.Add(this.lblHealing);
+      this.viewPort.Controls.Add(this.lblDamageCant);
+      this.viewPort.Controls.Add(this.lblDamage);
+      this.viewPort.Controls.Add(this.lblBalanceCant);
+      this.viewPort.Controls.Add(this.lblBalance);
+      this.viewPort.Controls.Add(this.lblSuppliesCant);
+      this.viewPort.Controls.Add(this.lblSupplies);
+      this.viewPort.Controls.Add(this.lblLootCant);
+      this.viewPort.Controls.Add(this.lblLoot);
+      this.viewPort.Controls.Add(this.topPanel);
+      this.viewPort.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.viewPort.Location = new System.Drawing.Point(0, 0);
+      this.viewPort.Name = "viewPort";
+      this.viewPort.OriginalImage = ((System.Drawing.Image)(resources.GetObject("viewPort.OriginalImage")));
+      this.viewPort.Size = new System.Drawing.Size(259, 150);
+      this.viewPort.TabIndex = 0;
       // 
       // lblHealingCant
       // 
       this.lblHealingCant.AutoSize = true;
       this.lblHealingCant.BackColor = System.Drawing.Color.Transparent;
-      this.lblHealingCant.Location = new System.Drawing.Point(63, 126);
+      this.lblHealingCant.Location = new System.Drawing.Point(66, 126);
       this.lblHealingCant.Name = "lblHealingCant";
       this.lblHealingCant.Size = new System.Drawing.Size(67, 13);
       this.lblHealingCant.TabIndex = 10;
@@ -83,16 +84,16 @@
       this.lblHealing.BackColor = System.Drawing.Color.Transparent;
       this.lblHealing.Location = new System.Drawing.Point(11, 126);
       this.lblHealing.Name = "lblHealing";
-      this.lblHealing.Size = new System.Drawing.Size(46, 13);
+      this.lblHealing.Size = new System.Drawing.Size(49, 13);
       this.lblHealing.TabIndex = 9;
-      this.lblHealing.Text = "Blance: ";
+      this.lblHealing.Text = "Healing: ";
       this.lblHealing.TextAlign = System.Drawing.ContentAlignment.TopCenter;
       // 
       // lblDamageCant
       // 
       this.lblDamageCant.AutoSize = true;
       this.lblDamageCant.BackColor = System.Drawing.Color.Transparent;
-      this.lblDamageCant.Location = new System.Drawing.Point(63, 101);
+      this.lblDamageCant.Location = new System.Drawing.Point(70, 101);
       this.lblDamageCant.Name = "lblDamageCant";
       this.lblDamageCant.Size = new System.Drawing.Size(67, 13);
       this.lblDamageCant.TabIndex = 8;
@@ -105,9 +106,9 @@
       this.lblDamage.BackColor = System.Drawing.Color.Transparent;
       this.lblDamage.Location = new System.Drawing.Point(11, 101);
       this.lblDamage.Name = "lblDamage";
-      this.lblDamage.Size = new System.Drawing.Size(46, 13);
+      this.lblDamage.Size = new System.Drawing.Size(53, 13);
       this.lblDamage.TabIndex = 7;
-      this.lblDamage.Text = "Blance: ";
+      this.lblDamage.Text = "Damage: ";
       this.lblDamage.TextAlign = System.Drawing.ContentAlignment.TopCenter;
       // 
       // lblBalanceCant
@@ -178,6 +179,7 @@
       // 
       // topPanel
       // 
+      this.topPanel.Controls.Add(this.hideBtn);
       this.topPanel.Controls.Add(this.lblName);
       this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
       this.topPanel.EdgeHeight = 5;
@@ -185,8 +187,24 @@
       this.topPanel.Location = new System.Drawing.Point(0, 0);
       this.topPanel.Name = "topPanel";
       this.topPanel.OriginalImage = global::Tibia_Utilities.Properties.Resources.TopBarS;
-      this.topPanel.Size = new System.Drawing.Size(260, 20);
+      this.topPanel.Size = new System.Drawing.Size(259, 20);
       this.topPanel.TabIndex = 0;
+      // 
+      // hideBtn
+      // 
+      this.hideBtn.BackColor = System.Drawing.Color.Transparent;
+      this.hideBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+      this.hideBtn.FlatAppearance.BorderSize = 0;
+      this.hideBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+      this.hideBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+      this.hideBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.hideBtn.Image = global::Tibia_Utilities.Properties.Resources.hide;
+      this.hideBtn.Location = new System.Drawing.Point(239, 3);
+      this.hideBtn.Name = "hideBtn";
+      this.hideBtn.Size = new System.Drawing.Size(15, 15);
+      this.hideBtn.TabIndex = 1;
+      this.hideBtn.UseVisualStyleBackColor = false;
+      this.hideBtn.Click += new System.EventHandler(this.hideBtn_Click);
       // 
       // lblName
       // 
@@ -199,13 +217,13 @@
       this.lblName.Text = "Name";
       this.lblName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
       // 
-      // PartyLootData
+      // PartyPlayerData
       // 
-      this.Controls.Add(this.backgroundPanel);
-      this.Name = "PartyLootData";
-      this.Size = new System.Drawing.Size(260, 150);
-      this.backgroundPanel.ResumeLayout(false);
-      this.backgroundPanel.PerformLayout();
+      this.Controls.Add(this.viewPort);
+      this.Name = "PartyPlayerData";
+      this.Size = new System.Drawing.Size(259, 150);
+      this.viewPort.ResumeLayout(false);
+      this.viewPort.PerformLayout();
       this.topPanel.ResumeLayout(false);
       this.topPanel.PerformLayout();
       this.ResumeLayout(false);
@@ -214,7 +232,7 @@
 
     #endregion
 
-    private TUSlicePanel backgroundPanel;
+    private TUSlicePanel viewPort;
     private TUSlicePanel topPanel;
     private System.Windows.Forms.Label lblName;
     private System.Windows.Forms.Label lblLoot;
@@ -227,5 +245,6 @@
     private System.Windows.Forms.Label lblHealing;
     private System.Windows.Forms.Label lblDamageCant;
     private System.Windows.Forms.Label lblDamage;
+    private TUCtrlButton hideBtn;
   }
 }

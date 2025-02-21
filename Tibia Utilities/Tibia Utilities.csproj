@@ -83,17 +83,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\ObjectPool.cs" />
     <Compile Include="Core\SoundManager.cs" />
-    <Compile Include="CustomControls\SplitLoot\PartyLootData.cs">
+    <Compile Include="CustomControls\SplitLoot\PartyPlayerData.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CustomControls\SplitLoot\PartyLootData.Designer.cs">
-      <DependentUpon>PartyLootData.cs</DependentUpon>
+    <Compile Include="CustomControls\SplitLoot\PartyPlayerData.Designer.cs">
+      <DependentUpon>PartyPlayerData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\SplitLoot\PlayerTransfer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\SplitLoot\PlayerTransfer.Designer.cs">
+      <DependentUpon>PlayerTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\TibiaVScrollBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TibiaVScrollBar.Designer.cs">
+      <DependentUpon>TibiaVScrollBar.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomControls\TUMainPanelButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CustomControls\TUPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TUSliceButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CustomControls\TUSlicePanel.cs">
@@ -111,7 +127,9 @@
     <Compile Include="Lib\TUStrings.cs" />
     <Compile Include="Lib\Win32.cs" />
     <Compile Include="Models\PanelDataModel.cs" />
-    <Compile Include="Models\PartyLootModel.cs" />
+    <Compile Include="Models\SplitLoot\PartyLootModel.cs" />
+    <Compile Include="Models\SplitLoot\PlayerDifferenceModel.cs" />
+    <Compile Include="Models\SplitLoot\TransferModel.cs" />
     <Compile Include="Views\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,8 +162,14 @@
     <Compile Include="Views\Panels\SplitLoot.Designer.cs">
       <DependentUpon>SplitLoot.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CustomControls\SplitLoot\PartyLootData.resx">
-      <DependentUpon>PartyLootData.cs</DependentUpon>
+    <EmbeddedResource Include="CustomControls\SplitLoot\PartyPlayerData.resx">
+      <DependentUpon>PartyPlayerData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\SplitLoot\PlayerTransfer.resx">
+      <DependentUpon>PlayerTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\TibiaVScrollBar.resx">
+      <DependentUpon>TibiaVScrollBar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -253,6 +277,11 @@
     <None Include="Resources\TopBarS.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\UpScrollBarButton.png" />
+    <None Include="Resources\DownScrollBarButton.png" />
+    <None Include="Resources\GoldCoin.gif" />
+    <None Include="Resources\Copy.png" />
+    <None Include="Resources\hide.png" />
     <Content Include="Resources\Press.ogg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -260,6 +289,9 @@
     <None Include="Resources\Unpress.wav" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\TrackVScrollBar.png" />
+    <None Include="Resources\ThumbScrollBar.png" />
+    <None Include="Resources\show.png" />
     <Content Include="Resources\Unpress.ogg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
