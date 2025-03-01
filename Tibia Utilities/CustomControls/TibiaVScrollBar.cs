@@ -20,10 +20,6 @@ namespace Tibia_Utilities.CustomControls
 
     private int _step = 10;
 
-    private int scrollAccelerationFactor = 10; // Factor de aceleración para el desplazamiento
-    private int minStep = 5; // Mínimo desplazamiento permitido
-    private int maxStep = 50; // Máximo desplazamiento permitido
-
     // Timer para el "keep pressed"
     private Timer scrollTimer = new Timer();
     private int currentScrollDirection = 0; // 1 para abajo, -1 para arriba, 0 para detenido
@@ -84,36 +80,17 @@ namespace Tibia_Utilities.CustomControls
 
     public void MoveThumbByWheel(int delta)
     {
-      // Verificar si el thumb ya ocupa todo el espacio disponible en el track
-      if (thumb.Height >= Height - (up.Height + down.Height))
+      switch (delta)
       {
-        // No permitir movimiento si el thumb ocupa todo el track
-        return;
+        case > 0:
+          MoveThumbByClick(-_step);
+          break;
+        case < 0:
+          MoveThumbByClick(_step);
+          break;
+        case 0:
+          break;
       }
-
-      scrollAccelerationFactor = (int)viewPort.Height / 10;
-      // Calcular el desplazamiento basado en la velocidad de la rueda del ratón (e.Delta)
-      int scrollAmount = delta / 120; // Dividir por 120 para normalizar el valor (típico incremento de la rueda)
-      int step = Math.Min(maxStep, Math.Max(minStep, Math.Abs(scrollAmount) * scrollAccelerationFactor));
-
-      // Determinar la nueva posición del thumb
-      int newY;
-      if (delta > 0)
-      {
-        newY = Math.Max(up.Height, thumb.Top - step); // Mover hacia arriba
-      }
-      else
-      {
-        newY = Math.Min(Height - thumb.Height - down.Height, thumb.Top + step); // Mover hacia abajo
-      }
-
-      // Actualizar la posición del thumb
-      thumb.Top = newY;
-
-      // Actualizar el ViewPort
-      Update();
-      Invalidate(thumb.Bounds);
-      UpdateViewPort();
     }
 
     private void UpButton_MouseDown(object sender, MouseEventArgs e)

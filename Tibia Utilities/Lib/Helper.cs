@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Drawing.Text;
+using System.Windows.Forms;
 
 using Tibia_Utilities.Core;
 using Tibia_Utilities.Properties;
@@ -13,6 +14,13 @@ namespace Tibia_Utilities.Lib
                 preferredFontName: TUStrings.Fonts.PREFERRED_FONT, // Fuente preferida
                 fallbackFontName: TUStrings.Fonts.FLLBACK_FONT,    // Fuente alternativa
                 size: 8,
+                style: FontStyle.Bold
+            );
+
+    public static Font safeFont9 = FontHelper.GetSafeFont(
+                preferredFontName: TUStrings.Fonts.PREFERRED_FONT, // Fuente preferida
+                fallbackFontName: TUStrings.Fonts.FLLBACK_FONT,    // Fuente alternativa
+                size: 9,
                 style: FontStyle.Bold
             );
 
@@ -118,6 +126,10 @@ namespace Tibia_Utilities.Lib
       // Crear y devolver el objeto Color
       return Color.FromArgb(alpha, red, green, blue);
     }
+
+    public static ObjectPool<Label> labelsPool = new(20);
+
+    public static ToolStripDropDown dropDown = new();
 
     public static string FormatTibiaGold(int amount)
     {

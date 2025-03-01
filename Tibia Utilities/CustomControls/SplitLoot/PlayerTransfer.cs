@@ -80,6 +80,5 @@ namespace Tibia_Utilities.CustomControls.SplitLoot
       lblPayer.Text = transfer.Payer;
       AlignContent();
     }
-
   }
 }

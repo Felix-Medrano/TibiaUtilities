@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Tibia_Utilities.Core
 {
@@ -9,16 +10,28 @@ namespace Tibia_Utilities.Core
     public ObjectPool(int initialCapacity)
     {
       _pool = new Stack<T>(initialCapacity);
+      InitializePool(initialCapacity);
     }
 
-    public T Get()
+    private async void InitializePool(int initialCapacity)
     {
-      return _pool.Count > 0 ? _pool.Pop() : new T();
+      await Task.Run(() =>
+      {
+        for (int i = 0; i < initialCapacity; i++)
+        {
+          _pool.Push(new T());
+        }
+      });
     }
 
-    public void Return(T obj)
+    public async Task<T> Get()
     {
-      _pool.Push(obj);
+      return await Task.Run(() => _pool.Count > 0 ? _pool.Pop() : new T());
+    }
+
+    public async Task Return(T obj)
+    {
+      await Task.Run(() => _pool.Push(obj));
     }
   }
 }

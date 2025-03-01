@@ -5,6 +5,7 @@ using System.Windows.Forms;
 
 namespace Tibia_Utilities.CustomControls
 {
+  [Serializable]
   public class TUSlicePanel : Panel
   {
     private Image _originalImage;

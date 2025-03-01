@@ -52,7 +52,7 @@ namespace Tibia_Utilities.Views.Panels
       leftScrollBar.UpdateThumbHeight();
     }
 
-    private void Button_Click(object sender, System.EventArgs e)
+    private async void Button_Click(object sender, System.EventArgs e)
     {
       try
       {
@@ -81,7 +81,7 @@ namespace Tibia_Utilities.Views.Panels
 
         foreach (var player in players)
         {
-          var playerData = playerPool.Get();
+          var playerData = await playerPool.Get();
 
           playerData.SetData(player);
           playerData.PanelClick += TopPanel_Click;
@@ -116,7 +116,7 @@ namespace Tibia_Utilities.Views.Panels
       ViewPortUpdate();
     }
 
-    private void SetData(List<PartyLootModel> players)
+    private async void SetData(List<PartyLootModel> players)
     {
 
       List<TransferModel> splitTransfers = CalculateSplit(players);
@@ -134,7 +134,7 @@ namespace Tibia_Utilities.Views.Panels
 
       foreach (var transfer in splitTransfers)
       {
-        var playerTransfer = transferPool.Get();
+        var playerTransfer = await transferPool.Get();
         playerTransfer.SetData(transfer);
         playerTransfer.Location = new Point(0, offsetY);
         offsetY += playerTransfer.Height;

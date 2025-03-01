@@ -8,6 +8,7 @@ using Tibia_Utilities.Properties;
 
 namespace Tibia_Utilities.CustomControls
 {
+  [Serializable]
   public class TUTopControlBar : Panel
   {
     private Image _originalImage;
