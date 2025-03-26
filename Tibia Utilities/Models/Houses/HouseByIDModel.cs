@@ -20,6 +20,7 @@
     public string town { get; set; }
     public string type { get; set; }
     public string world { get; set; }
+    public int Top { get; set; } = 0;
   }
 
   public class Rental

@@ -181,6 +181,9 @@
   <data name="MinimizeBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MinimizeBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="noiImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\noiImage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Press.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -195,6 +198,9 @@
   </data>
   <data name="singleGP" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\singleGP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TextureBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TextureBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ThumbScrollBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ThumbScrollBar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

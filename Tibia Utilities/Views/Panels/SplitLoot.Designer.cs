@@ -86,8 +86,8 @@
       this.rightScrollBar.Size = new System.Drawing.Size(16, 400);
       this.rightScrollBar.Step = 10;
       this.rightScrollBar.TabIndex = 1;
-      this.rightScrollBar.viewContainer = null;
-      this.rightScrollBar.viewPort = null;
+      this.rightScrollBar.ViewPort = null;
+      this.rightScrollBar.ViewContainer = null;
       this.rightScrollBar.Visible = false;
       // 
       // transferPlayerViewport
@@ -124,8 +124,8 @@
       this.leftScrollBar.Size = new System.Drawing.Size(16, 400);
       this.leftScrollBar.Step = 10;
       this.leftScrollBar.TabIndex = 1;
-      this.leftScrollBar.viewContainer = null;
-      this.leftScrollBar.viewPort = null;
+      this.leftScrollBar.ViewPort = null;
+      this.leftScrollBar.ViewContainer = null;
       // 
       // partyPlayerViewPort
       // 

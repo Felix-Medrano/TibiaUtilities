@@ -271,6 +271,16 @@ namespace Tibia_Utilities.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap noiImage {
+            get {
+                object obj = ResourceManager.GetObject("noiImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream Press {
@@ -315,6 +325,16 @@ namespace Tibia_Utilities.Properties {
         internal static System.Drawing.Bitmap singleGP {
             get {
                 object obj = ResourceManager.GetObject("singleGP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TextureBackground {
+            get {
+                object obj = ResourceManager.GetObject("TextureBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

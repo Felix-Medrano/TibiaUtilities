@@ -39,8 +39,8 @@ namespace Tibia_Utilities.CustomControls
       set => _step = value;
     }
 
-    public TUPanel viewPort { get; set; }
-    public TUPanel viewContainer { get; set; }
+    public TUPanel ViewContainer { get; set; }
+    public TUPanel ViewPort { get; set; }
 
     public TibiaVScrollBar()
     {
@@ -73,6 +73,8 @@ namespace Tibia_Utilities.CustomControls
 
     protected override void OnMouseWheel(MouseEventArgs e)
     {
+      if (ViewContainer.Height <= ViewPort.Height) return;
+
       base.OnMouseWheel(e);
 
       MoveThumbByWheel(e.Delta);
@@ -95,25 +97,34 @@ namespace Tibia_Utilities.CustomControls
 
     private void UpButton_MouseDown(object sender, MouseEventArgs e)
     {
+      if (ViewContainer.Height <= ViewPort.Height) return;
+
       StartScroll((int)ScrollDirection.Up); // Mover hacia arriba
       Helper.Sounds.PlayPressButtonSound();
     }
 
     private void DownButton_MouseDown(object sender, MouseEventArgs e)
     {
+      if (ViewContainer.Height <= ViewPort.Height) return;
+
       StartScroll((int)ScrollDirection.Down); // Mover hacia abajo
       Helper.Sounds.PlayPressButtonSound();
     }
 
     private void Button_MouseUp(object sender, MouseEventArgs e)
     {
+
+      if (ViewContainer.Height <= ViewPort.Height) return;
       StopScroll((int)ScrollDirection.Stop); // Detener el desplazamiento
       Helper.Sounds.PlayReleaseButtonSound();
     }
 
     private void Thumb_MouseDown(object sender, MouseEventArgs e)
     {
-      if (thumb.Height >= Height - (up.Height + down.Height)) return;
+      if ((thumb.Height >= Height - (up.Height + down.Height)) ||
+          (ViewContainer.Height <= ViewPort.Height))
+        return;
+
       if (e.Button == MouseButtons.Left)
       {
         isDragging = true;
@@ -123,6 +134,8 @@ namespace Tibia_Utilities.CustomControls
 
     private void Thumb_MouseMove(object sender, MouseEventArgs e)
     {
+      if (ViewContainer.Height <= ViewPort.Height) return;
+
       if (isDragging)
       {
         int newY = Math.Max(16, Math.Min(Height - thumb.Height - 16, thumb.Top + e.Y - mouseOffsetY));
@@ -184,30 +197,38 @@ namespace Tibia_Utilities.CustomControls
 
     private void UpdateViewPort()
     {
-      if (viewPort == null || viewContainer == null) return;
+      if (ViewContainer == null || ViewPort == null) return;
 
       double percent = (double)(thumb.Top - up.Height) / (Height - thumb.Height - up.Height - down.Height);
-      int maxScroll = viewContainer.Height - viewPort.Height;
-      viewPort.Top = (int)(percent * maxScroll);
+      int maxScroll = ViewPort.Height - ViewContainer.Height;
+      ViewContainer.Top = (int)(percent * maxScroll);
 
-      viewPort.Update();
+      ViewContainer.Update();
     }
 
     public void UpdateThumbHeight()
     {
-      if (viewPort == null || viewContainer == null)
+
+      if (ViewContainer == null || ViewPort == null)
         return;
+
+      Visible = ViewContainer.Height <= ViewPort.Height ? false : true;
+
+      if (!Visible)
+      {
+        ViewContainer.Top = 0;
+      }
 
       int availableHeight = Height - (up.Height + down.Height);
 
-      if (viewContainer.Height >= viewPort.Height)
+      if (ViewPort.Height >= ViewContainer.Height)
       {
         thumb.Height = availableHeight;
         thumb.Top = 16;
       }
       else
       {
-        double percentVisible = (double)viewPort.Height / viewContainer.Height;
+        double percentVisible = (double)ViewContainer.Height / ViewPort.Height;
         thumb.Height = (int)Math.Max(availableHeight / percentVisible, 47);
       }
 
@@ -216,9 +237,10 @@ namespace Tibia_Utilities.CustomControls
 
     private void UpdateThumbPosition()
     {
-      if (viewPort == null || viewContainer == null) return;
+      if (ViewContainer == null || ViewPort == null) return;
 
-      double percent = (double)viewPort.Top / (viewContainer.Height - viewPort.Height);
+
+      double percent = (double)ViewContainer.Top / (ViewPort.Height - ViewContainer.Height);
       thumb.Top = up.Height + (int)(percent * (track.Height - thumb.Height - up.Height - down.Height));
 
       thumb.Top = Math.Max(up.Height, Math.Min(track.Height - thumb.Height - down.Height, thumb.Top));

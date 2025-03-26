@@ -29,17 +29,17 @@
     private void InitializeComponent()
     {
       this.backgroundPanel = new Tibia_Utilities.CustomControls.TUSlicePanel();
-      this.viewPort = new Tibia_Utilities.CustomControls.TUPanel();
       this.container = new Tibia_Utilities.CustomControls.TUPanel();
+      this.viewPort = new Tibia_Utilities.CustomControls.TUPanel();
       this.scrollBar = new Tibia_Utilities.CustomControls.TibiaVScrollBar();
       this.backgroundPanel.SuspendLayout();
-      this.container.SuspendLayout();
+      this.viewPort.SuspendLayout();
       this.SuspendLayout();
       // 
       // backgroundPanel
       // 
-      this.backgroundPanel.Controls.Add(this.viewPort);
       this.backgroundPanel.Controls.Add(this.container);
+      this.backgroundPanel.Controls.Add(this.viewPort);
       this.backgroundPanel.Dock = System.Windows.Forms.DockStyle.Fill;
       this.backgroundPanel.Location = new System.Drawing.Point(0, 0);
       this.backgroundPanel.Name = "backgroundPanel";
@@ -48,24 +48,24 @@
       this.backgroundPanel.Size = new System.Drawing.Size(156, 155);
       this.backgroundPanel.TabIndex = 0;
       // 
-      // viewPort
-      // 
-      this.viewPort.BackColor = System.Drawing.Color.Transparent;
-      this.viewPort.Location = new System.Drawing.Point(0, 0);
-      this.viewPort.Name = "viewPort";
-      this.viewPort.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-      this.viewPort.Size = new System.Drawing.Size(128, 145);
-      this.viewPort.TabIndex = 1;
-      // 
       // container
       // 
       this.container.BackColor = System.Drawing.Color.Transparent;
-      this.container.Controls.Add(this.scrollBar);
-      this.container.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.container.Location = new System.Drawing.Point(3, 2);
+      this.container.Location = new System.Drawing.Point(0, 0);
       this.container.Name = "container";
-      this.container.Size = new System.Drawing.Size(150, 150);
-      this.container.TabIndex = 0;
+      this.container.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+      this.container.Size = new System.Drawing.Size(128, 145);
+      this.container.TabIndex = 1;
+      // 
+      // viewPort
+      // 
+      this.viewPort.BackColor = System.Drawing.Color.Transparent;
+      this.viewPort.Controls.Add(this.scrollBar);
+      this.viewPort.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.viewPort.Location = new System.Drawing.Point(3, 2);
+      this.viewPort.Name = "viewPort";
+      this.viewPort.Size = new System.Drawing.Size(150, 150);
+      this.viewPort.TabIndex = 0;
       // 
       // scrollBar
       // 
@@ -75,19 +75,20 @@
       this.scrollBar.Size = new System.Drawing.Size(16, 150);
       this.scrollBar.Step = 10;
       this.scrollBar.TabIndex = 0;
-      this.scrollBar.viewContainer = this.container;
-      this.scrollBar.viewPort = this.viewPort;
+      this.scrollBar.ViewContainer = this.container;
+      this.scrollBar.ViewPort = this.viewPort;
       // 
       // TCBDropDown
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.Controls.Add(this.backgroundPanel);
+      this.Margin = new System.Windows.Forms.Padding(0);
       this.Name = "TCBDropDown";
       this.Size = new System.Drawing.Size(156, 155);
       this.Resize += new System.EventHandler(this.TCBDropDown_Resize);
       this.backgroundPanel.ResumeLayout(false);
-      this.container.ResumeLayout(false);
+      this.viewPort.ResumeLayout(false);
       this.ResumeLayout(false);
 
     }
@@ -95,8 +96,8 @@
     #endregion
 
     private TUSlicePanel backgroundPanel;
-    private TUPanel container;
-    private TibiaVScrollBar scrollBar;
     private TUPanel viewPort;
+    private TibiaVScrollBar scrollBar;
+    private TUPanel container;
   }
 }

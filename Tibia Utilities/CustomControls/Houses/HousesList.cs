@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using Tibia_Utilities.Core;
 using Tibia_Utilities.Lib;
 using Tibia_Utilities.Models.Houses;
 
@@ -13,24 +11,27 @@ namespace Tibia_Utilities.CustomControls.Houses
 {
   public partial class HousesList : UserControl
   {
-    public event EventHandler PanelClick;
+    public event EventHandler<HousesList> PanelClick;
 
-    private ObjectPool<HouseDataView> houseDataViewPool = new ObjectPool<HouseDataView>(70);
     private List<HouseDataView> gettedHouseDataViewPool = new ();
 
-    private List<House> houseListCache = new();
+    private List<HousesListParseModel> houseListCache = new();
 
-    private bool minimized = false;
-    private TUPanel _viewPort;
+    private bool minimized = true;
+    private TUPanel _housesContainer;
     private TibiaVScrollBar _scrollBar; // Referencia al scrollbar
+    private int expandHeight = 0;
+
+    public Views.Panels.Houses parentHouses { get; set; }
+    public bool IsLoading { get; set; }
 
     [Browsable(true)]
     [Category("Custom Props")]
     [Description("Get or Set the ViewPort")]
-    public TUPanel ViewPort
+    public TUPanel HousesContainer
     {
-      get { return _viewPort; }
-      set { _viewPort = value; }
+      get { return _housesContainer; }
+      set { _housesContainer = value; }
     }
 
     [Browsable(true)]
@@ -42,24 +43,21 @@ namespace Tibia_Utilities.CustomControls.Houses
       set { _scrollBar = value; }
     }
 
-    private int maxHeigth;
+    public bool Minimized { get => minimized; set => minimized = value; }
+
     public HousesList()
     {
       InitializeComponent();
 
       DoubleBuffered = true;
 
+      Task.Run(() => DisposeHouseDataView());
+
       lblName.Font = Helper.safeFont10;
       lblName.ForeColor = Helper.HexToColor(TUStrings.Colors.TITLE_TEXT_COLOR);
       lblName.CenterControlToParent();
 
       AssingClickEvents();
-    }
-
-    protected override void OnLoad(EventArgs e)
-    {
-      base.OnLoad(e);
-      UpdateView();
     }
 
     private void AssingClickEvents()
@@ -71,72 +69,100 @@ namespace Tibia_Utilities.CustomControls.Houses
       }
     }
 
-    private async void TopPanel_Click(object sender, EventArgs e)
+    private void TopPanel_Click(object sender, EventArgs e)
     {
       minimized = !minimized;
 
-      if (!minimized)
+      PanelClick?.Invoke(this, this);
+    }
+
+    public void AddHouseData(Models.Houses.Houses housesData)
+    {
+      foreach (var house in housesData.house_list)
       {
-        foreach (var houseDataView in gettedHouseDataViewPool)
-        {
-          houseDataView.Clear();
-          await houseDataViewPool.Return(houseDataView);
-        }
-        gettedHouseDataViewPool.Clear();
-        container.Height = 0;
-        container.Controls.Clear();
-      }
-      else
-      {
-        await AddHouseDataView();
+        HousesListParseModel tempHouse = new();
+        tempHouse.SetData(house);
+        houseListCache.Add(tempHouse);
       }
 
-      UpdateView();
+      foreach (var gh in housesData.guildhall_list)
+      {
+        HousesListParseModel tempHouse = new();
+        tempHouse.SetData(gh);
+        houseListCache.Add(tempHouse);
+      }
 
-      PanelClick?.Invoke(this, e);
+      expandHeight = (houseListCache.Count * 75) + (topPanel.Height + 5);
     }
 
-    private void UpdateView()
-    {
-      Height = minimized ? maxHeigth : topPanel.Height + 5;
-      _viewPort.Height = Height;
-
-      Update();
-      Invalidate();
-    }
-
-    public void AddHouseData(List<House> houseData)
-    {
-      if (houseListCache != null)
-        houseListCache = houseData;
-    }
-
-    private async Task AddHouseDataView()
+    public async Task ShowHouseDataView()
     {
       int locationY = 0;
-      maxHeigth = topPanel.Height + 5;
+
+      parentHouses.HousesListEnabled(false);
+
+      List<HouseDataView> list = new();
 
       foreach (var house in houseListCache)
       {
-        var houseDataView = await houseDataViewPool.Get();
+        var houseDataView = await Helper.HouseDataViewPool.Get();
         gettedHouseDataViewPool.Add(houseDataView);
+        houseDataView.Name = house.name;
         houseDataView.SetData(house);
+        houseDataView.HouseDataClick += parentHouses.OnHouseDataViewClick;
 
-        houseDataView.Location = new Point(0, locationY);
-        container.Controls.Add(houseDataView);
-
+        houseDataView.Dock = DockStyle.Bottom;
+        list.Add(houseDataView);
         locationY += houseDataView.Height;
-        maxHeigth += houseDataView.Height;
-
-        container.Height = maxHeigth - 2;
-        Height = maxHeigth;
-        UpdateView();
 
         // Actualizar el scrollbar
         _scrollBar?.UpdateThumbHeight();
         _scrollBar.Update();
 
+        Update();
+        Invalidate();
+
       }
+
+      Height = expandHeight;
+      container.Controls.AddRange(list.ToArray());
+      parentHouses.HousesListEnabled(true);
+
+      ScrollBar.UpdateThumbHeight();
+
+    }
+
+    public void SetTitle(string townName)
+    {
+      lblName.Text = townName;
+      lblName.CenterControlToParent(System.Drawing.ContentAlignment.MiddleLeft);
+    }
+
+    public void UpdateHouseDataViewVisibles()
+    {
+      if (!minimized)
+      {
+
+      }
+    }
+
+    public async Task DisposeHouseDataView()
+    {
+      foreach (var houseDataView in gettedHouseDataViewPool)
+      {
+        houseDataView.DisposeData();
+        houseDataView.HouseDataClick -= parentHouses.OnHouseDataViewClick;
+        await Helper.HouseDataViewPool.Return(houseDataView);
+      }
+      gettedHouseDataViewPool.Clear();
+      Height = topPanel.Height + 5;
+      minimized = true;
+      container.Controls.Clear();
+    }
+
+    public string GetTitle()
+    {
+      return lblName.Text;
     }
   }
 }

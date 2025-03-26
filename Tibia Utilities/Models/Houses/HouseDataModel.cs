@@ -1,6 +1,6 @@
 ﻿namespace Tibia_Utilities.Models.Houses
 {
-  public class HoiseDataModel
+  public class HouseDataModel
   {
     public string Name { get; set; }
     public string Size { get; set; }

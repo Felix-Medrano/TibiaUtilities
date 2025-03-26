@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Drawing.Text;
-using System.Windows.Forms;
 
 using Tibia_Utilities.Core;
+using Tibia_Utilities.CustomControls;
+using Tibia_Utilities.CustomControls.Houses;
 using Tibia_Utilities.Properties;
 
 namespace Tibia_Utilities.Lib
@@ -127,9 +129,9 @@ namespace Tibia_Utilities.Lib
       return Color.FromArgb(alpha, red, green, blue);
     }
 
-    public static ObjectPool<Label> labelsPool = new(20);
+    public static ObjectPool<TULabel> LabelsPool = new(20);
 
-    public static ToolStripDropDown dropDown = new();
+    public static ObjectPool<HouseDataView> HouseDataViewPool;
 
     public static string FormatTibiaGold(int amount)
     {
@@ -138,6 +140,16 @@ namespace Tibia_Utilities.Lib
       else if (amount >= 1_000)
         return $"{amount / 1_000}k";
       return $"{amount}gp";
+    }
+
+    public static string ImageToBase64(Image image, ImageFormat format)
+    {
+      using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
+      {
+        image.Save(ms, format);
+        byte[] imageBytes = ms.ToArray();
+        return Convert.ToBase64String(imageBytes);
+      }
     }
 
     public static class FontHelper
@@ -185,6 +197,69 @@ namespace Tibia_Utilities.Lib
       public static void PlayReleaseButtonSound()
       {
         SoundManager.PlaySoundFromResources(Resources.Unpress);
+      }
+    }
+
+    public static string ConvertUTCToLocalTime(string utcDateTime)
+    {
+      // Parsear la fecha y hora en UTC
+      DateTime utcTime = DateTime.Parse(utcDateTime, null, System.Globalization.DateTimeStyles.RoundtripKind);
+
+      // Convertir la fecha y hora de UTC a la hora local
+      DateTime localTime = utcTime.ToLocalTime();
+
+      // Obtener la zona horaria local
+      TimeZoneInfo localZone = TimeZoneInfo.Local;
+
+      // Formatear la fecha y hora en el formato especificado
+      string formattedTime = localTime.ToString("Mmm dd, HH:mm") + " " + localZone.StandardName;
+
+      TimeZone.CurrentTimeZone.ConsoleWL();
+
+      return formattedTime;
+    }
+
+    public static string ConvertCESTToLocalTime(string cestDateTime)
+    {
+      try
+      {
+        // Definir la zona horaria de CEST
+        TimeZoneInfo cestZone = TimeZoneInfo.FindSystemTimeZoneById("Central European Standard Time");
+
+        // Parsear la fecha y hora en CEST
+        DateTime cestTime = DateTime.SpecifyKind(DateTime.Parse(cestDateTime), DateTimeKind.Unspecified);
+
+        // Convertir la fecha y hora de CEST a UTC
+        DateTime utcTime = TimeZoneInfo.ConvertTimeToUtc(cestTime, cestZone);
+
+        // Convertir la fecha y hora de UTC a la hora local
+        DateTime localTime = utcTime.ToLocalTime();
+
+        // Obtener la zona horaria local
+        TimeZoneInfo localZone = TimeZoneInfo.Local;
+
+        // Formatear la fecha y hora en el formato especificado
+        string formattedTime = localTime.ToString("MMM dd, HH:mm") + " " + localZone.StandardName;
+
+        return formattedTime;
+      }
+      catch (TimeZoneNotFoundException ex)
+      {
+        // Manejar el caso en que la zona horaria no se encuentra
+        Console.WriteLine($"Error: Zona horaria no encontrada. {ex.Message}");
+        throw;
+      }
+      catch (InvalidTimeZoneException ex)
+      {
+        // Manejar el caso en que la zona horaria es inválida
+        Console.WriteLine($"Error: Zona horaria inválida. {ex.Message}");
+        throw;
+      }
+      catch (Exception ex)
+      {
+        // Manejar cualquier otro tipo de excepción
+        Console.WriteLine($"Error: Ocurrió un error al convertir la hora. {ex.Message}");
+        throw;
       }
     }
   }

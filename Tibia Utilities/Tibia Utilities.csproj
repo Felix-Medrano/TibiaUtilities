@@ -133,6 +133,9 @@
     <Compile Include="CustomControls\TibiaVScrollBar.Designer.cs">
       <DependentUpon>TibiaVScrollBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\TULabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CustomControls\TUMainPanelButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -151,22 +154,30 @@
     <Compile Include="CustomControls\TUTopControlBar.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CustomControls\TUWebBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Interfaces\IHideMessage.cs" />
     <Compile Include="Interfaces\IInit.cs" />
     <Compile Include="Interfaces\Panels\IViewPanel.cs" />
     <Compile Include="Lib\ExtendedMethods.cs" />
     <Compile Include="Lib\Helper.cs" />
+    <Compile Include="Lib\NaturalOrderComparer.cs" />
     <Compile Include="Lib\TUStrings.cs" />
     <Compile Include="Lib\Win32.cs" />
     <Compile Include="Models\DropDownDataModel.cs" />
-    <Compile Include="Models\Houses\HoiseDataModel.cs" />
+    <Compile Include="Models\Houses\HouseDataModel.cs" />
     <Compile Include="Models\Houses\HouseByIDModel.cs" />
     <Compile Include="Models\Houses\HousesByTownModel.cs" />
+    <Compile Include="Models\Houses\HousesListParseModel.cs" />
     <Compile Include="Models\Houses\WorldsModel.cs" />
     <Compile Include="Models\PanelDataModel.cs" />
     <Compile Include="Models\SplitLoot\PartyLootModel.cs" />
     <Compile Include="Models\SplitLoot\PlayerDifferenceModel.cs" />
     <Compile Include="Models\SplitLoot\TransferModel.cs" />
+    <Compile Include="Patterns\Observer\House\IHouseListObserver.cs" />
+    <Compile Include="Patterns\Observer\House\IHouseListSubject.cs" />
+    <Compile Include="Service\Exceptions\HttpRequestExceptionWithStatusCode.cs" />
     <Compile Include="Service\HTTPService.cs" />
     <Compile Include="Views\Main.cs">
       <SubType>Form</SubType>
@@ -333,6 +344,7 @@
     <None Include="Resources\Copy.png" />
     <None Include="Resources\hide.png" />
     <None Include="Resources\HouseShopIcon.png" />
+    <None Include="Resources\noiImage.jpg" />
     <Content Include="Resources\Press.ogg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -344,6 +356,7 @@
     <None Include="Resources\ThumbScrollBar.png" />
     <None Include="Resources\show.png" />
     <None Include="Resources\singleGP.png" />
+    <None Include="Resources\TextureBackground.png" />
     <Content Include="Resources\Unpress.ogg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

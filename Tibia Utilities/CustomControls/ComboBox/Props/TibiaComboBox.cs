@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using Tibia_Utilities.CustomControls.ComboBox.Props;
@@ -25,7 +26,8 @@ namespace Tibia_Utilities.CustomControls
     private TCBDropDown dropDownPanel = new();
 
     private DropDownMessageFilter _dropDownMessageFilter;
-    private List<Label> currentLabels = new();
+    private List<TULabel> currentLabels = new();
+    private string _text = string.Empty;
 
     [Browsable(false)]
     public TCBDropDown DropDownPanel { get => dropDownPanel; }
@@ -38,15 +40,34 @@ namespace Tibia_Utilities.CustomControls
 
       DoubleBuffered = true;
 
+      lblWorld.Font =
+      lblDrop.Font = Helper.safeFont8;
+
+      lblWorld.ForeColor =
+      lblDrop.ForeColor = Helper.HexToColor(TUStrings.Colors.DESC_TEXT_COLOR);
+
+      lblDrop.CenterControlToParent();
+      lblWorld.CenterControlToParent();
+
       dropBtn.Click += ComboBtn_Click;
       dropBtn.MouseDown += ComboBtns_MouseDown;
       dropBtn.MouseUp += ComboBtns_MouseUp;
+
+      lblDrop.Click += ComboBtn_Click;
+      lblDrop.MouseDown += ComboBtns_MouseDown;
+      lblDrop.MouseUp += ComboBtns_MouseUp;
 
       worldBtn.Click += ComboBtn_Click;
       worldBtn.MouseDown += ComboBtns_MouseDown;
       worldBtn.MouseUp += ComboBtns_MouseUp;
 
+      lblWorld.Click += ComboBtn_Click;
+      lblWorld.MouseDown += ComboBtns_MouseDown;
+      lblWorld.MouseUp += ComboBtns_MouseUp;
+
       _dropDownMessageFilter = new(this);
+
+      dropDownPanel.TibiaComboBox = this;
 
     }
 
@@ -54,10 +75,16 @@ namespace Tibia_Utilities.CustomControls
     {
       base.OnLoad(e);
       dropDownPanel.Visible = false;
-      MainView.Controls.Add(dropDownPanel);
+      MainView?.Controls.Add(dropDownPanel);
       dropDownPanel.BringToFront();
       dropDownPanel.Width = Width;
       dropDownPanel.Location = new Point(Left, Bottom);
+    }
+
+    protected override void OnResize(EventArgs e)
+    {
+      base.OnResize(e);
+      lblWorld.CenterControlToParent();
     }
 
     private void ComboBtn_Click(object sender, EventArgs e)
@@ -91,7 +118,7 @@ namespace Tibia_Utilities.CustomControls
       Helper.Sounds.PlayReleaseButtonSound();
     }
 
-    public async void UpdateBtnsState()
+    public void UpdateBtnsState()
     {
       Bitmap img = null;
       switch (boxState)
@@ -119,7 +146,18 @@ namespace Tibia_Utilities.CustomControls
       dropDownPanel.AddData(data);
     }
 
-    internal void HideDropDown()
+    public void SetText(string text)
+    {
+      lblWorld.Text = Text = text;
+      lblWorld.CenterControlToParent();
+    }
+
+    public string GetText()
+    {
+      return lblWorld.Text;
+    }
+
+    internal async void HideDropDown()
     {
       Application.RemoveMessageFilter(_dropDownMessageFilter);
       Application.DoEvents();
@@ -128,7 +166,7 @@ namespace Tibia_Utilities.CustomControls
 
       foreach (var lbl in currentLabels)
       {
-        Helper.labelsPool.Return(lbl);
+        Task.WaitAny(Helper.LabelsPool.Return(lbl));
       }
 
       currentLabels.Clear();

@@ -28,12 +28,12 @@ namespace Tibia_Utilities.Views.Panels
     {
       InitializeComponent();
 
-      leftScrollBar.viewContainer = container;
-      leftScrollBar.viewPort = partyPlayerViewPort;
+      leftScrollBar.ViewContainer = container;
+      leftScrollBar.ViewPort = partyPlayerViewPort;
       leftScrollBar.UpdateThumbHeight();
 
-      rightScrollBar.viewContainer = rightContainer;
-      rightScrollBar.viewPort = transferPlayerViewport;
+      rightScrollBar.ViewContainer = rightContainer;
+      rightScrollBar.ViewPort = transferPlayerViewport;
       rightScrollBar.UpdateThumbHeight();
     }
 
@@ -292,7 +292,7 @@ namespace Tibia_Utilities.Views.Panels
       Clear(true);
     }
 
-    private void Clear(bool cleanList)
+    private async void Clear(bool cleanList)
     {
       foreach (Control control in partyPlayerViewPort.Controls)
       {
@@ -302,16 +302,15 @@ namespace Tibia_Utilities.Views.Panels
           player.HideClick -= HideButton_Click;
           player.MouseWheel -= MouseWheelEvent;
           player.Reset();
-          playerPool.Return(player);
+          await playerPool.Return(player);
         }
       }
       partyPlayerViewPort.Controls.Clear();
-      //partyPlayerViewPort.Height = 0;
 
       foreach (Control control in transferPlayerViewport.Controls)
       {
         if (control is PlayerTransfer transfer)
-          transferPool.Return(transfer);
+          await transferPool.Return(transfer);
       }
       transferPlayerViewport.Controls.Clear();
       transferPlayerViewport.Height = 0;

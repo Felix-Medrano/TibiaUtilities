@@ -27,6 +27,9 @@ namespace Tibia_Utilities.Lib
     public const int N_RBUTTONDOWN = 0X204; //Btn Derecho presionado
     public const int N_RBUTTONUP = 0X205; //Btn Derecho liberado
 
+    // Constantes para ShowWindow
+    public const int SW_RESTORE = 9;
+
     // Importar funciones de User32.dll
     [DllImport("user32.dll")]
     public static extern int SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
@@ -39,6 +42,17 @@ namespace Tibia_Utilities.Lib
 
     [DllImport("user32.dll")]
     public static extern bool GetCursorPos(out Point lpPoint);
+
+    [DllImport("user32.dll", SetLastError = true)]
+    public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
+
+    [DllImport("user32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static extern bool SetForegroundWindow(IntPtr hWnd);
+
+    [DllImport("user32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 
     // Estructura para almacenar coordenadas del cursor
     [StructLayout(LayoutKind.Sequential)]

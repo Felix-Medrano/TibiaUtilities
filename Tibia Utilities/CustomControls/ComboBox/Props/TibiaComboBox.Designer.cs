@@ -28,40 +28,53 @@
     /// </summary>
     private void InitializeComponent()
     {
-      this.label1 = new System.Windows.Forms.Label();
       this.worldBtn = new Tibia_Utilities.CustomControls.TUSlicePanel();
+      this.lblWorld = new System.Windows.Forms.Label();
       this.dropBtn = new Tibia_Utilities.CustomControls.TUSlicePanel();
+      this.lblDrop = new System.Windows.Forms.Label();
+      this.worldBtn.SuspendLayout();
+      this.dropBtn.SuspendLayout();
       this.SuspendLayout();
-      // 
-      // label1
-      // 
-      this.label1.AutoSize = true;
-      this.label1.BackColor = System.Drawing.Color.Transparent;
-      this.label1.Location = new System.Drawing.Point(3, 6);
-      this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(16, 13);
-      this.label1.TabIndex = 0;
-      this.label1.Text = "▼";
       // 
       // worldBtn
       // 
+      this.worldBtn.Controls.Add(this.lblWorld);
       this.worldBtn.Dock = System.Windows.Forms.DockStyle.Fill;
       this.worldBtn.Location = new System.Drawing.Point(0, 0);
       this.worldBtn.Name = "worldBtn";
       this.worldBtn.OriginalImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
-      this.worldBtn.Size = new System.Drawing.Size(188, 23);
+      this.worldBtn.Size = new System.Drawing.Size(187, 23);
       this.worldBtn.TabIndex = 1;
+      // 
+      // lblWorld
+      // 
+      this.lblWorld.AutoSize = true;
+      this.lblWorld.Location = new System.Drawing.Point(62, 10);
+      this.lblWorld.Name = "lblWorld";
+      this.lblWorld.Size = new System.Drawing.Size(65, 13);
+      this.lblWorld.TabIndex = 0;
+      this.lblWorld.Text = "Placeholder";
       // 
       // dropBtn
       // 
+      this.dropBtn.Controls.Add(this.lblDrop);
       this.dropBtn.Dock = System.Windows.Forms.DockStyle.Right;
       this.dropBtn.EdgeHeight = 3;
       this.dropBtn.EdgeWidth = 3;
-      this.dropBtn.Location = new System.Drawing.Point(188, 0);
+      this.dropBtn.Location = new System.Drawing.Point(187, 0);
       this.dropBtn.Name = "dropBtn";
       this.dropBtn.OriginalImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
       this.dropBtn.Size = new System.Drawing.Size(23, 23);
       this.dropBtn.TabIndex = 0;
+      // 
+      // lblDrop
+      // 
+      this.lblDrop.AutoSize = true;
+      this.lblDrop.Location = new System.Drawing.Point(4, 6);
+      this.lblDrop.Name = "lblDrop";
+      this.lblDrop.Size = new System.Drawing.Size(16, 13);
+      this.lblDrop.TabIndex = 0;
+      this.lblDrop.Text = "▼";
       // 
       // TibiaComboBox
       // 
@@ -71,6 +84,10 @@
       this.Controls.Add(this.dropBtn);
       this.Name = "TibiaComboBox";
       this.Size = new System.Drawing.Size(210, 23);
+      this.worldBtn.ResumeLayout(false);
+      this.worldBtn.PerformLayout();
+      this.dropBtn.ResumeLayout(false);
+      this.dropBtn.PerformLayout();
       this.ResumeLayout(false);
 
     }
@@ -79,6 +96,7 @@
 
     private TUSlicePanel dropBtn;
     private TUSlicePanel worldBtn;
-    private System.Windows.Forms.Label label1;
+    private System.Windows.Forms.Label lblWorld;
+    private System.Windows.Forms.Label lblDrop;
   }
 }

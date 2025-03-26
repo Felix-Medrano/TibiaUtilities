@@ -1,15 +1,21 @@
 ﻿using Newtonsoft.Json;
 
-using System;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+
+using Tibia_Utilities.Lib;
+using Tibia_Utilities.Service.Exceptions;
 
 namespace Tibia_Utilities.Service
 {
   public class HTTPService
   {
     private HttpClient httpClient;
-    public HTTPService() { httpClient = new HttpClient(); }
+    public HTTPService()
+    {
+      httpClient = new HttpClient();
+    }
 
 
     public async Task<T> GetAsync<T>(string url) where T : class
@@ -22,28 +28,23 @@ namespace Tibia_Utilities.Service
       try
       {
         HttpResponseMessage responseMessage = await httpClient.GetAsync(url);
+#if DEBUG
+        $"===Type: {typeof(T).Name}===".ConsoleWL();
+        responseMessage.ConsoleWL();
+#endif
         responseMessage.EnsureSuccessStatusCode();
         responseJson = await responseMessage.Content.ReadAsStringAsync();
 
-        info = JsonConvert.DeserializeObject<T>(responseJson);
-
-        return info;
-
-      }
-      catch (TaskCanceledException)
-      {
-        Console.WriteLine("Request was canceled by timeout.");
-        return null;
+        return JsonConvert.DeserializeObject<T>(responseJson);
       }
       catch (HttpRequestException ex)
       {
-        Console.WriteLine($"Error en peticion {ex.Message}");
-        return null;
-      }
-      catch (Exception ex)
-      {
-        System.Windows.Forms.MessageBox.Show(ex.Message);
-        return null;
+        if (ex.Data.Contains("StatusCode"))
+        {
+          var statusCode = (HttpStatusCode)ex.Data["StatusCode"];
+          throw new HttpRequestExceptionWithStatusCode(statusCode, ex.Message);
+        }
+        throw;
       }
     }
   }

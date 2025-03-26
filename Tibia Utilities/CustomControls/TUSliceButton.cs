@@ -234,7 +234,8 @@ namespace Tibia_Utilities.CustomControls
     protected override void OnMouseDown(MouseEventArgs mevent)
     {
       base.OnMouseDown(mevent);
-      if (_pressedImage != null)
+      if (mevent.Button == MouseButtons.Left &&
+          _pressedImage != null)
       {
         _originalImage = _pressedImage;
         isPressed = true;
@@ -248,20 +249,15 @@ namespace Tibia_Utilities.CustomControls
     protected override void OnMouseUp(MouseEventArgs mevent)
     {
       base.OnMouseUp(mevent);
-      Console.WriteLine("SliceButton::A");
       if (_unpressedImage != null)
       {
-        Console.WriteLine("SliceButton::B");
         _originalImage = _unpressedImage;
         isPressed = false;
       }
-      Console.WriteLine("SliceButton::C");
 
       Helper.Sounds.PlayReleaseButtonSound();
-      Console.WriteLine("SliceButton::D");
 
       SliceAndRedraw();
-      Console.WriteLine("SliceButton::E");
     }
 
     // Liberar recursos

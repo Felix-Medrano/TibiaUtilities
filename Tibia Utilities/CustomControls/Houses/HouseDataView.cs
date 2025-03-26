@@ -9,6 +9,8 @@ namespace Tibia_Utilities.CustomControls.Houses
 {
   public partial class HouseDataView : UserControl
   {
+    public event EventHandler<HouseDataView> HouseDataClick;
+
     private bool clicked = false;
 
     public HouseDataView()
@@ -24,15 +26,17 @@ namespace Tibia_Utilities.CustomControls.Houses
 
     private void HouseData_Click(object sender, EventArgs e)
     {
-      BackColor = clicked ? Color.Transparent : Color.White;
-      clicked = !clicked;
+      //BackColor = clicked ? Color.Transparent : Color.White;
+      //clicked = !clicked;
+
+      HouseDataClick?.Invoke(this, this);
     }
 
     private void AssignClickEvents()
     {
       // Lista de controles que necesitan el evento
       Control[] controls = {
-              this, lblSize, lblSqm, lblBeds, lblCantBeds, lblRent, lblCantRent,
+              this, lblSize, lblSqm, lblRent, lblCantRent, lblAuction,
               lblStatus, lblDesc, topPanel, lblName, coinImg, shopImg, viewPort
           };
 
@@ -50,12 +54,10 @@ namespace Tibia_Utilities.CustomControls.Houses
       lblName.CenterControlToParent();
 
       lblSize.ForeColor =
-      lblBeds.ForeColor =
       lblRent.ForeColor =
       lblStatus.ForeColor = Helper.HexToColor(TUStrings.Colors.TITLE_TEXT_COLOR);
 
       lblSqm.ForeColor =
-      lblCantBeds.ForeColor =
       lblCantRent.ForeColor =
       lblDesc.ForeColor = Helper.HexToColor(TUStrings.Colors.DESC_TEXT_COLOR);
 
@@ -69,7 +71,7 @@ namespace Tibia_Utilities.CustomControls.Houses
       }
     }
 
-    public void SetData(House house)
+    public void SetData(HousesListParseModel house)
     {
       if (InvokeRequired)
       {
@@ -79,17 +81,66 @@ namespace Tibia_Utilities.CustomControls.Houses
 
       // Actualiza la UI con los datos de la casa
       lblName.Text = house.name;
+      lblName.CenterControlToParent();
       lblSqm.Text = house.size.ToString("N0");
-      lblCantBeds.Text = house.beds.ToString("N0");
       lblCantRent.Text = Helper.FormatTibiaGold(house.rent);
-      lblDesc.Text = house.status.is_rented ? "Alquilada" : "Disponible";
+
+      if (house.auctioned)
+      {
+        lblAuction.ForeColor = Helper.HexToColor(TUStrings.Colors.POSI_TEXT_COLOR);
+        lblAuction.Text = $"{TUStrings.AUCTIONED}";
+
+        if (house.auction.current_bid > 0)
+        {
+          lblDesc.Text = $" (Bid:  {house.auction.current_bid.ToString("N0")} gp  ends  in  {house.auction.time_left})";
+        }
+        else
+          lblDesc.Text = $"({TUStrings.NO_BID})";
+      }
+      else if (house.rented)
+      {
+        lblAuction.ForeColor = Helper.HexToColor(TUStrings.Colors.DESC_TEXT_COLOR);
+        lblAuction.Text = $"{TUStrings.RENTED}";
+        lblDesc.Text = string.Empty;
+      }
+
+      if (house.name.Contains("(Shop)"))
+        shopImg.Visible = true;
+      else
+        shopImg.Visible = false;
+
+      Tag = house;
     }
 
-    public void Clear()
+    public HousesListParseModel GetData()
+    {
+      return Tag as HousesListParseModel;
+    }
+
+    public void DataSelected(bool isSelected)
+    {
+      BackColor = isSelected ? Color.White : Color.Transparent;
+    }
+
+    public void DisposeData()
     {
       BackColor = Color.Transparent;
       clicked = false;
-      Location = new Point(0, 0);
+    }
+
+    public override string ToString()
+    {
+      var h = GetData();
+      if (h == null) return base.ToString();
+
+      return h.DeepInfoToString();
+    }
+
+    public string PrintDeepData()
+    {
+      var h = GetData();
+      if (h == null) return string.Empty;
+      return h.DeepInfoToString();
     }
   }
 }

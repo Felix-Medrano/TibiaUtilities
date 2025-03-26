@@ -11,7 +11,7 @@ namespace Tibia_Utilities.Models.Houses
 
   public class GuildhallList
   {
-    public Auction auction { get; set; }
+    public AuctionHouse auction { get; set; }
     public bool auctioned { get; set; }
     public int house_id { get; set; }
     public string name { get; set; }
@@ -20,9 +20,9 @@ namespace Tibia_Utilities.Models.Houses
     public int size { get; set; }
   }
 
-  public class HouseList
+  public class HousesList
   {
-    public Auction auction { get; set; }
+    public AuctionHouse auction { get; set; }
     public bool auctioned { get; set; }
     public int house_id { get; set; }
     public string name { get; set; }
@@ -34,7 +34,7 @@ namespace Tibia_Utilities.Models.Houses
   public class Houses
   {
     public List<GuildhallList> guildhall_list { get; set; }
-    public List<HouseList> house_list { get; set; }
+    public List<HousesList> house_list { get; set; }
     public string town { get; set; }
     public string world { get; set; }
   }
