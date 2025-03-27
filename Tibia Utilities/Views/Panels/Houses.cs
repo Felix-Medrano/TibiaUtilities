@@ -47,7 +47,7 @@ namespace Tibia_Utilities.Views.Panels
       var countTowns = typeof(TUStrings.Towns).GetFields().Length;
 
       housesListPool = new ObjectPool<CustomControls.Houses.HousesList>(countTowns);
-#if DEBUG
+#if FAST_DEBUG
       // inicializamos pocos objetos para un arranque mas rapido
       Helper.HouseDataViewPool = new ObjectPool<CustomControls.Houses.HouseDataView>(10).InitializePool();
 #else
