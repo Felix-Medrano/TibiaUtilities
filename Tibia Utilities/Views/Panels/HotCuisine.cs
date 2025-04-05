@@ -78,6 +78,14 @@ namespace Tibia_Utilities.Views.Panels
     }
 
     /// <summary>
+    /// Handles the mouse wheel event for scrolling the ingredients container.
+    /// </summary>
+    private void MouseWheelEvent(object sender, MouseEventArgs e)
+    {
+      OnMouseWheel(e);
+    }
+
+    /// <summary>
     /// Handles the click event for the add button in the recipe data view.
     /// </summary>
     private void AddBtn_Click(object sender, System.EventArgs e)
@@ -146,8 +154,8 @@ namespace Tibia_Utilities.Views.Panels
                   rowsToRemove.Add(row);
                   break;
                 }
-                _ingredientRowPool.AltReturn(rowsToRemove);
               }
+              _ingredientRowPool.AltReturn(rowsToRemove);
             }
           }
         }
@@ -275,14 +283,6 @@ namespace Tibia_Utilities.Views.Panels
     }
 
     /// <summary>
-    /// Handles the mouse wheel event for scrolling the ingredients container.
-    /// </summary>
-    private void MouseWheelEvent(object sender, MouseEventArgs e)
-    {
-      OnMouseWheel(e);
-    }
-
-    /// <summary>
     /// Handles the click event for the remove all button.
     /// </summary>
     private void removeAllBtn_Click(object sender, EventArgs e)
@@ -407,7 +407,6 @@ namespace Tibia_Utilities.Views.Panels
         row.DisposeRow();
         row.SetData(ingredient.Value.Item1);
         row.SetCant(ingredient.Value.Item2);
-        //row.ResetCbIngredient();
         index++;
       }
 
