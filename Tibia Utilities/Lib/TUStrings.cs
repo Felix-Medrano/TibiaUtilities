@@ -9,6 +9,12 @@
     public const string RENTED                         = "rented";
     public const string WORLDS                         = "Worlds";
     public const string HOUSES_NO_INFO                 = "No hay información disponible.";
+    public const string MARKET                         = "Market";
+    public const string MONSTERS                       = "Monsters";
+    public const string QUESTS                         = "Quests";
+    public const string CRAFTING                       = "Crafting";
+    public const string EVENTS                         = "Events";
+    public const string BARREL                         = "Barrel";
 
     public class LeftDataString
     {
@@ -86,6 +92,24 @@
       public const string RENTED                        = "Rented";
       //public const string TRANSFERING                   = "Transfering";
       //public const string MOVING                        = "Moving";
+    }
+
+    public class Recipes
+    {
+      public const string ROTWORM_STEW                  = "Rotworm Stew";
+      public const string HYDRA_TONGUE_SALAD            = "Hydra Tongue Salad";
+      public const string ROASTED_DRAGON_WINGS          = "Roasted Dragon Wings";
+      public const string TROPICAL_FRIED_TERRORBIRD     = "Tropical Fried Terrorbird";
+      public const string BANANA_CHOCOLATE_SHAKE        = "Banana Chocolate Shake";
+      public const string VEGGIE_CASSEROLE              = "Veggie Casserole";
+      public const string FILLED_JALAPENO_PEPPERS       = "Filled Jalapeño Peppers";
+      public const string BLESSED_STEAK                 = "Blessed Steak";
+      public const string NORTHERN_FISHBURGER           = "Northern Fishburger";
+      public const string CARROT_CAKE                   = "Carrot Cake";
+      public const string COCONUT_SHRIMP_BAKE           = "Coconut Shrimp Bake";
+      public const string POT_OF_BLACKJACK              = "Pot of Blackjack";
+      public const string DEMONIC_CANDY_BALLS           = "Demonic Candy Balls";
+      public const string SWEET_MANGONAISE_ELIXIR       = "Sweet Mangonaise Elixir";
     }
   }
 }

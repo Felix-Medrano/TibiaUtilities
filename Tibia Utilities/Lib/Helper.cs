@@ -19,6 +19,13 @@ namespace Tibia_Utilities.Lib
                 style: FontStyle.Bold
             );
 
+    public static Font safeFont8Strike = FontHelper.GetSafeFont(
+                preferredFontName: TUStrings.Fonts.PREFERRED_FONT, // Fuente preferida
+                fallbackFontName: TUStrings.Fonts.FLLBACK_FONT,    // Fuente alternativa
+                size: 8,
+                style: FontStyle.Bold | FontStyle.Strikeout
+            );
+
     public static Font safeFont9 = FontHelper.GetSafeFont(
                 preferredFontName: TUStrings.Fonts.PREFERRED_FONT, // Fuente preferida
                 fallbackFontName: TUStrings.Fonts.FLLBACK_FONT,    // Fuente alternativa
@@ -26,10 +33,10 @@ namespace Tibia_Utilities.Lib
                 style: FontStyle.Bold
             );
 
-    public static Font safeFont8Strike = FontHelper.GetSafeFont(
+    public static Font safeFont9Strike = FontHelper.GetSafeFont(
                 preferredFontName: TUStrings.Fonts.PREFERRED_FONT, // Fuente preferida
                 fallbackFontName: TUStrings.Fonts.FLLBACK_FONT,    // Fuente alternativa
-                size: 8,
+                size: 9,
                 style: FontStyle.Bold | FontStyle.Strikeout
             );
 

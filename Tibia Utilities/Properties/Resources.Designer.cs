@@ -83,6 +83,26 @@ namespace Tibia_Utilities.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Banana_Chocolate_Shake {
+            get {
+                object obj = ResourceManager.GetObject("Banana_Chocolate_Shake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blessed_Steak {
+            get {
+                object obj = ResourceManager.GetObject("Blessed_Steak", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BookC {
             get {
                 object obj = ResourceManager.GetObject("BookC", resourceCulture);
@@ -113,6 +133,16 @@ namespace Tibia_Utilities.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Carrot_Cake {
+            get {
+                object obj = ResourceManager.GetObject("Carrot_Cake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CloseBtn {
             get {
                 object obj = ResourceManager.GetObject("CloseBtn", resourceCulture);
@@ -123,9 +153,39 @@ namespace Tibia_Utilities.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Coconut_Shrimp_Bake {
+            get {
+                object obj = ResourceManager.GetObject("Coconut_Shrimp_Bake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cookbook {
+            get {
+                object obj = ResourceManager.GetObject("Cookbook", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Copy {
             get {
                 object obj = ResourceManager.GetObject("Copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Demonic_Candy_Balls {
+            get {
+                object obj = ResourceManager.GetObject("Demonic_Candy_Balls", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -147,6 +207,16 @@ namespace Tibia_Utilities.Properties {
             get {
                 object obj = ResourceManager.GetObject("FavIcon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Filled_Jalapeño_Peppers {
+            get {
+                object obj = ResourceManager.GetObject("Filled_Jalapeño_Peppers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -196,6 +266,16 @@ namespace Tibia_Utilities.Properties {
         internal static System.Drawing.Bitmap HouseShopIcon {
             get {
                 object obj = ResourceManager.GetObject("HouseShopIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hydra_Tongue_Salad {
+            get {
+                object obj = ResourceManager.GetObject("Hydra_Tongue_Salad", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -281,6 +361,26 @@ namespace Tibia_Utilities.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Northern_Fishburger {
+            get {
+                object obj = ResourceManager.GetObject("Northern_Fishburger", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pot_of_Blackjack {
+            get {
+                object obj = ResourceManager.GetObject("Pot_of_Blackjack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream Press {
@@ -295,6 +395,26 @@ namespace Tibia_Utilities.Properties {
         internal static System.Drawing.Bitmap RaisedPanel {
             get {
                 object obj = ResourceManager.GetObject("RaisedPanel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Roasted_Dragon_Wings {
+            get {
+                object obj = ResourceManager.GetObject("Roasted_Dragon_Wings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rotworm_Stew {
+            get {
+                object obj = ResourceManager.GetObject("Rotworm_Stew", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -325,6 +445,16 @@ namespace Tibia_Utilities.Properties {
         internal static System.Drawing.Bitmap singleGP {
             get {
                 object obj = ResourceManager.GetObject("singleGP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sweet_Mangonaise_Elixir {
+            get {
+                object obj = ResourceManager.GetObject("Sweet_Mangonaise_Elixir", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -380,6 +510,16 @@ namespace Tibia_Utilities.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tropical_Fried_Terrorbird {
+            get {
+                object obj = ResourceManager.GetObject("Tropical_Fried_Terrorbird", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream Unpress {
@@ -394,6 +534,16 @@ namespace Tibia_Utilities.Properties {
         internal static System.Drawing.Bitmap UpScrollBarButton {
             get {
                 object obj = ResourceManager.GetObject("UpScrollBarButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Veggie_Casserole {
+            get {
+                object obj = ResourceManager.GetObject("Veggie_Casserole", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

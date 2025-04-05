@@ -99,6 +99,9 @@
     <Compile Include="Controllers\Houses\HouseController.cs" />
     <Compile Include="Controllers\Houses\WorldController.cs" />
     <Compile Include="Core\DropDownMessageFilter.cs" />
+    <Compile Include="Core\HotCuisine\HotCuisineIngredients.cs" />
+    <Compile Include="Core\HotCuisine\HotCuisineManager.cs" />
+    <Compile Include="Core\HotCuisine\RecipeTypeConverter.cs" />
     <Compile Include="Core\ObjectPool.cs" />
     <Compile Include="Core\SoundManager.cs" />
     <Compile Include="CustomControls\ComboBox\Props\TCBDropDown.cs">
@@ -106,6 +109,30 @@
     </Compile>
     <Compile Include="CustomControls\ComboBox\Props\TCBDropDown.Designer.cs">
       <DependentUpon>TCBDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\HotCuisine\MainIngredientRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\HotCuisine\MainIngredientRow.Designer.cs">
+      <DependentUpon>MainIngredientRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\HotCuisine\PopUp\IngredientPopupRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\HotCuisine\PopUp\IngredientPopupRow.Designer.cs">
+      <DependentUpon>IngredientPopupRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\HotCuisine\PopUp\RecipePopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\HotCuisine\PopUp\RecipePopup.Designer.cs">
+      <DependentUpon>RecipePopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\HotCuisine\RecipeDataView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\HotCuisine\RecipeDataView.Designer.cs">
+      <DependentUpon>RecipeDataView.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomControls\Houses\HouseDataView.cs">
       <SubType>UserControl</SubType>
@@ -143,6 +170,9 @@
     <Compile Include="CustomControls\TibiaVScrollBar.Designer.cs">
       <DependentUpon>TibiaVScrollBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\TUFlowLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CustomControls\TULabel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -178,6 +208,7 @@
     <Compile Include="Models\DropDownDataModel.cs" />
     <Compile Include="Models\HotCuisine\IngredientModel.cs" />
     <Compile Include="Models\HotCuisine\RecipeModel.cs" />
+    <Compile Include="Models\HotCuisine\TownModel.cs" />
     <Compile Include="Models\Houses\HouseDataModel.cs" />
     <Compile Include="Models\Houses\HouseByIDModel.cs" />
     <Compile Include="Models\Houses\HousesByTownModel.cs" />
@@ -229,6 +260,18 @@
     </Compile>
     <EmbeddedResource Include="CustomControls\ComboBox\Props\TCBDropDown.resx">
       <DependentUpon>TCBDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\HotCuisine\MainIngredientRow.resx">
+      <DependentUpon>MainIngredientRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\HotCuisine\PopUp\IngredientPopupRow.resx">
+      <DependentUpon>IngredientPopupRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\HotCuisine\PopUp\RecipePopup.resx">
+      <DependentUpon>RecipePopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\HotCuisine\RecipeDataView.resx">
+      <DependentUpon>RecipeDataView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\Houses\HouseDataView.resx">
       <DependentUpon>HouseDataView.cs</DependentUpon>
@@ -294,7 +337,6 @@
     <None Include="Resources\FavIcon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Jean_Pierre%2527s_Cookbook_II.webp" />
     <None Include="Resources\SckLogo.png" />
   </ItemGroup>
   <ItemGroup>
@@ -366,16 +408,16 @@
     <None Include="Resources\hide.png" />
     <None Include="Resources\HouseShopIcon.png" />
     <None Include="Resources\noiImage.jpg" />
-    <None Include="Resources\Cookbook.png" />
-    <None Include="Resources\Hydra Tongue Salad.png" />
-    <None Include="Resources\Filled Jalapeño Peppers.png" />
-    <None Include="Resources\Blessed Steak.png" />
-    <None Include="Resources\Northern Fishburger.png" />
-    <None Include="Resources\Carrot Cake.png" />
     <None Include="Resources\Coconut Shrimp Bake.png" />
-    <None Include="Resources\Pot of Blackjack.png" />
-    <None Include="Resources\Demonic Candy Balls.gif" />
+    <None Include="Resources\Carrot Cake.png" />
+    <None Include="Resources\Northern Fishburger.png" />
+    <None Include="Resources\Blessed Steak.png" />
+    <None Include="Resources\Filled Jalapeño Peppers.png" />
     <None Include="Resources\Banana Chocolate Shake.png" />
+    <None Include="Resources\Hydra Tongue Salad.png" />
+    <None Include="Resources\Cookbook.png" />
+    <None Include="Resources\Demonic Candy Balls.gif" />
+    <None Include="Resources\Pot of Blackjack.png" />
     <Content Include="Resources\Press.ogg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -388,9 +430,9 @@
     <None Include="Resources\show.png" />
     <None Include="Resources\singleGP.png" />
     <None Include="Resources\TextureBackground.png" />
-    <None Include="Resources\Rotworm Stew.png" />
-    <None Include="Resources\Roasted Dragon Wings.png" />
     <None Include="Resources\Tropical Fried Terrorbird.png" />
+    <None Include="Resources\Roasted Dragon Wings.png" />
+    <None Include="Resources\Rotworm Stew.png" />
     <None Include="Resources\Sweet Mangonaise Elixir.gif" />
     <Content Include="Resources\Unpress.ogg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

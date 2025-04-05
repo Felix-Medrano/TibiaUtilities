@@ -206,7 +206,7 @@ namespace Tibia_Utilities.CustomControls
 
           using (Brush textBrush = new SolidBrush(Helper.HexToColor(TUStrings.Colors.DESC_TEXT_COLOR)))
           {
-            g.DrawString(Text, Helper.safeFont8, textBrush, new RectangleF(textOffsetX, textOffsetY, width, height), sf);
+            g.DrawString(Text, Font, textBrush, new RectangleF(textOffsetX, textOffsetY, width, height), sf);
           }
         }
       }

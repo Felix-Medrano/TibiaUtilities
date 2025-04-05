@@ -77,6 +77,8 @@ namespace Tibia_Utilities.CustomControls
       SetStyle(ControlStyles.UserPaint, true);
       SetStyle(ControlStyles.ResizeRedraw, true);
 
+      UpdateStyles();
+
       ResizeRedraw = true; // Redibujar automáticamente al cambiar el tamaño
                            // Valores predeterminados
       EdgeHeight = 20;

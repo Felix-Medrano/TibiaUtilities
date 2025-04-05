@@ -85,14 +85,6 @@ namespace Tibia_Utilities
         currentButton.SetSelected(true);
         currentButton.Panel.SetViewPanel(mainView);
       }
-
-      var parent = currentButton.Parent;
-      Point buttonLocation = new Point(1, 1);
-      foreach (Control control in parent.Controls)
-      {
-        control.Location = buttonLocation;
-        buttonLocation.X += control.Width;
-      }
     }
 
     #endregion
@@ -101,6 +93,25 @@ namespace Tibia_Utilities
 
     private void SetPanelModels()
     {
+#if FAST_DEBUG
+
+      var Main = new PanelDataModel
+      {
+        ButtonText = "Main",
+        ButtonImage = Resources.BPUtilities,
+        Panel = new MainPanel()
+      };
+      panels.Add(Main);
+
+      var HotCuisine = new PanelDataModel
+      {
+        ButtonText = "Hot Cuisine",
+        ButtonImage = Resources.Cookbook,
+        Panel = new HotCuisine()
+      };
+      panels.Add(HotCuisine);
+#else
+
       var Main = new PanelDataModel
       {
         ButtonText = "Main",
@@ -125,6 +136,14 @@ namespace Tibia_Utilities
       };
       panels.Add(Houses);
 
+      var HotCuisine = new PanelDataModel
+      {
+        ButtonText = "Hot Cuisine",
+        ButtonImage = Resources.Cookbook,
+        Panel = new HotCuisine()
+      };
+      panels.Add(HotCuisine);
+
       //KEEP: Add new panels before here, Info should be the last one
       var Info = new PanelDataModel
       {
@@ -133,6 +152,7 @@ namespace Tibia_Utilities
         Panel = new Info()
       };
       panels.Add(Info);
+#endif
     }
 
     private void SetMainButtons()
@@ -141,35 +161,32 @@ namespace Tibia_Utilities
 
       foreach (var panel in panels)
       {
-        int buttonWidth;
         var button = new TUMainPanelButton
         {
-          Location = buttonLocation,
           Icon = panel.ButtonImage,
+          Margin = new Padding(0),
           SelectedText = panel.ButtonText,
           Panel = panel.Panel
         };
         button.Click += MainButton_Click;
 
-        mainButtonPanel.Controls.Add(button);
+        FlowLayoutPanel flowLayoutPanel = new FlowLayoutPanel
+        {
+          FlowDirection = FlowDirection.LeftToRight,
+          AutoSize = true,
+          Margin = new Padding(0),
+          Padding = new Padding(0)
+        };
 
-        buttonWidth = button.Width;
+        buttonsContainer.Controls.Add(button);
 
         if (currentButton == null)
         {
           currentButton = button;
           currentButton.SetSelected(true);
-          buttonWidth = currentButton.Width;
         }
-
-        buttonLocation.X += buttonWidth;
       }
-
-      #endregion
-
-      #region Public Functions
-
-      #endregion
     }
+    #endregion
   }
 }

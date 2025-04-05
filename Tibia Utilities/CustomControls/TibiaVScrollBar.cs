@@ -203,16 +203,27 @@ namespace Tibia_Utilities.CustomControls
       int maxScroll = ViewPort.Height - ViewContainer.Height;
       ViewContainer.Top = (int)(percent * maxScroll);
 
+      // Asegurarse de que el contenedor no se desplace más allá del límite superior
+      if (ViewContainer.Top > 0)
+      {
+        ViewContainer.Top = 0;
+      }
+
+      // Asegurarse de que el contenedor no se desplace más allá del límite inferior
+      if (thumb.Top + thumb.Height >= track.Height - down.Height)
+      {
+        ViewContainer.Top = Math.Min(0, ViewPort.Height - ViewContainer.Height);
+      }
+
       ViewContainer.Update();
     }
 
     public void UpdateThumbHeight()
     {
-
       if (ViewContainer == null || ViewPort == null)
         return;
 
-      Visible = ViewContainer.Height <= ViewPort.Height ? false : true;
+      Visible = ViewContainer.Height > ViewPort.Height;
 
       if (!Visible)
       {
@@ -228,11 +239,17 @@ namespace Tibia_Utilities.CustomControls
       }
       else
       {
-        double percentVisible = (double)ViewContainer.Height / ViewPort.Height;
-        thumb.Height = (int)Math.Max(availableHeight / percentVisible, 47);
+        double percentVisible = (double)ViewPort.Height / ViewContainer.Height;
+        thumb.Height = (int)Math.Max(availableHeight * percentVisible, 47);
       }
 
       UpdateThumbPosition();
+
+      // Ajustar la posición del contenedor si el thumb está al final del track
+      if (thumb.Top + thumb.Height >= track.Height - down.Height)
+      {
+        ViewContainer.Top = Math.Min(0, ViewPort.Height - ViewContainer.Height);
+      }
     }
 
     private void UpdateThumbPosition()

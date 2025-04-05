@@ -124,6 +124,12 @@
   <data name="Backpack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Backpack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Banana_Chocolate_Shake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banana Chocolate Shake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blessed_Steak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blessed Steak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="BookC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BookC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,17 +139,32 @@
   <data name="BPUtilities" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FavIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Carrot_Cake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Carrot Cake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="CloseBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CloseBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Coconut_Shrimp_Bake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Coconut Shrimp Bake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cookbook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cookbook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Demonic_Candy_Balls" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Demonic Candy Balls.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DownScrollBarButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DownScrollBarButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FavIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FavIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Filled_Jalapeño_Peppers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Filled Jalapeño Peppers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FramedBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FramedBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -159,6 +180,9 @@
   </data>
   <data name="HouseShopIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HouseShopIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hydra_Tongue_Salad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hydra Tongue Salad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="informacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\informacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,11 +208,23 @@
   <data name="noiImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\noiImage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Northern_Fishburger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Northern Fishburger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pot_of_Blackjack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pot of Blackjack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Press.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="RaisedPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RaisedPanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Roasted_Dragon_Wings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Roasted Dragon Wings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rotworm_Stew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rotworm Stew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SckLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SckLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -198,6 +234,9 @@
   </data>
   <data name="singleGP" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\singleGP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sweet_Mangonaise_Elixir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sweet Mangonaise Elixir.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TextureBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TextureBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,10 +253,16 @@
   <data name="TrackVScrollBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TrackVScrollBar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Tropical_Fried_Terrorbird" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tropical Fried Terrorbird.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Unpress" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Unpress.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="UpScrollBarButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UpScrollBarButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Veggie_Casserole" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Veggie Casserole.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

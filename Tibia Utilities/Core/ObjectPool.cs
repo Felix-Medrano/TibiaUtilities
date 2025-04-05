@@ -1,6 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+
+using Tibia_Utilities.CustomControls;
+using Tibia_Utilities.Lib;
 
 namespace Tibia_Utilities.Core
 {
@@ -8,11 +13,15 @@ namespace Tibia_Utilities.Core
   {
     private readonly Stack<T> _pool;
     private readonly int _capacity;
+    private TUPanel cachePanel = new();
+
+    private int AddCant = 0;
 
     public ObjectPool(int initialCapacity)
     {
       _capacity = initialCapacity;
       _pool = new Stack<T>(initialCapacity);
+      PreLoadCache();
     }
 
     public ObjectPool<T> InitializePool()
@@ -22,6 +31,47 @@ namespace Tibia_Utilities.Core
         _pool.Push(new T());
       }
       return this;
+    }
+
+    private void PreLoadCache()
+    {
+      List<T> list = new();
+
+      //_pool = new Stack<T>(initialCapacity);
+      for (int i = 0; i < _capacity; i++)
+      {
+        T t = new T();
+        list.Add(t);
+      }
+
+      cachePanel.Controls.AddRange(list.OfType<Control>().ToArray());
+
+      ToString().ConsoleWL();
+    }
+
+    //TODO: Simplificar Clase, AltGet, convertirlo a Get, y aplicar cambios a return
+    public T AltGet<T>() where T : Control, new()
+    {
+      if (cachePanel.Controls.Count == 0)
+      {
+        AddCant++;
+        Console.WriteLine($"Control(#{AddCant}) {typeof(T).Name} creado");
+        return new T();
+      }
+
+      var obj = (T)cachePanel.Controls[0];
+      cachePanel.Controls.Remove(obj);
+      return obj;
+    }
+
+    public void AltReturn<T>(List<T> objs) where T : Control
+    {
+      cachePanel.Controls.AddRange(objs.ToArray());
+#if FAST_DEBUG || DEBUG
+      $"{objs.Count} objetos devueltos al pool de {typeof(T).Name}".ConsoleWL();
+      ToString().ConsoleWL();
+#endif
+
     }
 
     public async Task<T> Get()
@@ -34,12 +84,15 @@ namespace Tibia_Utilities.Core
       await Task.Run(() => _pool.Push(obj));
     }
 
+    public Array PoolToArray() => _pool.ToArray();
+
     /// <summary>
     /// Calcula el tamaño(MB) estimado de los objetos en el pool.
     /// </summary>
     public double GetMemoryUsageMB()
     {
-      if (_pool.Count == 0)
+      //if (_pool.Count == 0)
+      if (cachePanel.Controls.Count == 0)
         return 0;
 
       // Medimos la memoria inicial
@@ -58,19 +111,21 @@ namespace Tibia_Utilities.Core
       if (objectSize <= 0)
         return 0;
 
-      // Calculamso el peso total de los objetos en el pool
-      long totalSizeBytes = objectSize * _pool.Count;
+      // Calculamos el peso total de los objetos en el pool
+      //long totalSizeBytes = objectSize * _pool.Count;
+      long totalSizeBytes = objectSize * cachePanel.Controls.Count;
 
-      // Convertimos y retornams el valor en MB (1 MB = 1,048,576 bytes)
+      // Convertimos y retornamos el valor en MB (1 MB = 1,048,576 bytes)
       return totalSizeBytes / 1048576;
     }
 
     public override string ToString()
     {
-      return $"===={typeof(T).Name} Pool====\n" +
-             $"Total Objects: {_pool.Count}\n" +
-             $"Init Capacity: {_capacity}\n" +
-             $"Estimated Memory Usage: {GetMemoryUsageMB():F2} MB";
+      return $"╔═══{typeof(T).Name} Pool════\n" +
+             $"╠═Total Objects: {cachePanel.Controls.Count}\n" +
+             $"╠═Init Capacity: {_capacity}\n" +
+             $"╠═Estimated Memory Usage: {GetMemoryUsageMB():F2} MB\n" +
+             $"╚════════════════════════════\n";
     }
   }
 }
