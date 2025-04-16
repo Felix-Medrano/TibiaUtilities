@@ -18,19 +18,6 @@ un intento mas
 otro mas
 
 tratand ode eliminar los espaciso al inicio de cada linea
-
-un intento con Prefijo CL
-
-aaaaaaaaaa
-
-BBBBBBBBB
-
-cccccc
-
-123456789
-
-987654321
-
-55555555555
-
-66666666666666
+asdasdasdadasdasdasdasdsadasdasd
+asdasdasd
+asdasdadsads
