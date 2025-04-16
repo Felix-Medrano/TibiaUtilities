@@ -1,1 +1,6 @@
 Texto de prueba
+
+este es el siguiente comentario, ya lee multilineas pero agrega literalmente el brinco de linea "\n" en cada salto
+Se agrego un texto de prueba al documento para poder registrar cambiso en P4\n	\n	de igual modo de esta probando el mandar el comentario de P4 a GitHub\n	\n	recordando que el comentari oes multilineas\n	\n	y aquei se trata de agregar varias lineas para testear\n... //Visual_Studio/TibiaUtilities/Documento de prueba.txt#2 edit
+
+ahora se evitara dicho error en este submit
