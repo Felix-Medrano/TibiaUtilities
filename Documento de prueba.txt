@@ -9,15 +9,4 @@ nuevo intento
 
 un nuevo intento, error de lectura de descripcion
 
-ahora probando directamente desde GitHub Desktop
-
-otro intento
- 
-un intento mas
-
-otro mas
-
-tratand ode eliminar los espaciso al inicio de cada linea
-asdasdasdadasdasdasdasdsadasdasd
-asdasdasd
-asdasdadsads
+32132as1d321sda32a1d32as1
