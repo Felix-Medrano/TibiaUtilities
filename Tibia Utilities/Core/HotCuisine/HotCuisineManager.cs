@@ -273,6 +273,22 @@ namespace Tibia_Utilities.Core.HotCuisine
         Effect = "Crea 10 copias del anillo(consumible) equipado"
       };
       _recipes.Add(sweetMangonaiseElixir.Name, sweetMangonaiseElixir);
+
+      var zaoanSauce = new RecipeModel
+      {
+        Name = TUStrings.Recipes.ZAOAN_SAUCE,
+        Icon = Resources.Zaoan_Sauce,
+        Ingredients = new List<IngredientModel>
+        {
+          _ingredients.Salt(1),
+          _ingredients.CoconutMilk(2),
+          _ingredients.Dragonfruit(1),
+          _ingredients.YoungLichWorm(1),
+          _ingredients.Taiyaki(1)
+        },
+        Effect = "Aumenta 10 puntos de Fist Skill durante 1 hora"
+      };
+      _recipes.Add(zaoanSauce.Name, zaoanSauce);
     }
   }
 }

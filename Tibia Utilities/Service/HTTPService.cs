@@ -20,7 +20,6 @@ namespace Tibia_Utilities.Service
 
     public async Task<T> GetAsync<T>(string url) where T : class
     {
-      T info = null;
       string responseJson = string.Empty;
 
       if (httpClient == null) { httpClient = new HttpClient(); }

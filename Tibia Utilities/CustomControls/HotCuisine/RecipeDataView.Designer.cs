@@ -53,7 +53,7 @@
       this.tuSlicePanel1.Name = "tuSlicePanel1";
       this.tuSlicePanel1.OriginalImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
       this.tuSlicePanel1.Padding = new System.Windows.Forms.Padding(2);
-      this.tuSlicePanel1.Size = new System.Drawing.Size(269, 32);
+      this.tuSlicePanel1.Size = new System.Drawing.Size(269, 30);
       this.tuSlicePanel1.TabIndex = 8;
       // 
       // recipeEffect
@@ -72,9 +72,9 @@
       this.lblName.BackColor = System.Drawing.Color.Transparent;
       this.lblName.Dock = System.Windows.Forms.DockStyle.Fill;
       this.lblName.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.lblName.Location = new System.Drawing.Point(34, 2);
+      this.lblName.Location = new System.Drawing.Point(31, 2);
       this.lblName.Name = "lblName";
-      this.lblName.Size = new System.Drawing.Size(233, 28);
+      this.lblName.Size = new System.Drawing.Size(236, 26);
       this.lblName.TabIndex = 3;
       this.lblName.Text = "Blessed Wooden Stake";
       this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,7 +88,7 @@
       this.recipeImg.Location = new System.Drawing.Point(2, 2);
       this.recipeImg.Margin = new System.Windows.Forms.Padding(0);
       this.recipeImg.Name = "recipeImg";
-      this.recipeImg.Size = new System.Drawing.Size(32, 28);
+      this.recipeImg.Size = new System.Drawing.Size(29, 26);
       this.recipeImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
       this.recipeImg.TabIndex = 2;
       this.recipeImg.TabStop = false;
@@ -101,7 +101,7 @@
       this.removeBtn.Name = "removeBtn";
       this.removeBtn.OriginalImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
       this.removeBtn.PressedImage = global::Tibia_Utilities.Properties.Resources.BorderedPanel;
-      this.removeBtn.Size = new System.Drawing.Size(32, 32);
+      this.removeBtn.Size = new System.Drawing.Size(32, 30);
       this.removeBtn.TabIndex = 9;
       this.removeBtn.Text = "- 1";
       this.removeBtn.UnpressedImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
@@ -116,7 +116,7 @@
       this.addBtn.Name = "addBtn";
       this.addBtn.OriginalImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
       this.addBtn.PressedImage = global::Tibia_Utilities.Properties.Resources.BorderedPanel;
-      this.addBtn.Size = new System.Drawing.Size(32, 32);
+      this.addBtn.Size = new System.Drawing.Size(32, 30);
       this.addBtn.TabIndex = 10;
       this.addBtn.Text = "+ 1";
       this.addBtn.UnpressedImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
@@ -131,7 +131,7 @@
       this.tuSlicePanel2.Margin = new System.Windows.Forms.Padding(0);
       this.tuSlicePanel2.Name = "tuSlicePanel2";
       this.tuSlicePanel2.OriginalImage = global::Tibia_Utilities.Properties.Resources.BorderedPanel;
-      this.tuSlicePanel2.Size = new System.Drawing.Size(32, 32);
+      this.tuSlicePanel2.Size = new System.Drawing.Size(32, 30);
       this.tuSlicePanel2.TabIndex = 11;
       // 
       // lblCant
@@ -141,7 +141,7 @@
       this.lblCant.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.lblCant.Location = new System.Drawing.Point(0, 0);
       this.lblCant.Name = "lblCant";
-      this.lblCant.Size = new System.Drawing.Size(32, 32);
+      this.lblCant.Size = new System.Drawing.Size(32, 30);
       this.lblCant.TabIndex = 4;
       this.lblCant.Text = "0";
       this.lblCant.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -158,7 +158,7 @@
       this.Controls.Add(this.tuSlicePanel1);
       this.Margin = new System.Windows.Forms.Padding(0);
       this.Name = "RecipeDataView";
-      this.Size = new System.Drawing.Size(365, 32);
+      this.Size = new System.Drawing.Size(365, 30);
       this.tuSlicePanel1.ResumeLayout(false);
       ((System.ComponentModel.ISupportInitialize)(this.recipeEffect)).EndInit();
       ((System.ComponentModel.ISupportInitialize)(this.recipeImg)).EndInit();

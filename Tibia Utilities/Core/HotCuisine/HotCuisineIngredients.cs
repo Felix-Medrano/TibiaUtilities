@@ -95,25 +95,11 @@ namespace Tibia_Utilities.Core.HotCuisine
       Image = "https://static.wikia.nocookie.net/tibialatin/images/6/6a/Cheese.gif"
     };
 
-    public IngredientModel DeadChicken(int cant) => new IngredientModel
-    {
-      Cant = cant,
-      Name = "Dead Chicken",
-      Image = "https://static.wikia.nocookie.net/tibia/images/5/5a/Dead_Chicken1.gif/revision/latest?cb=20091022154543&path-prefix=en"
-    };
-
     public IngredientModel CoconutMilk(int cant) => new IngredientModel
     {
       Cant = cant,
       Name = "Coconut Milk",
       Image = "https://static.wikia.nocookie.net/tibialatin/images/e/e4/Coconut_Milk.gif"
-    };
-
-    public IngredientModel FlaskOfDemonicBlood(int cant) => new IngredientModel
-    {
-      Cant = cant,
-      Name = "Flask of Demonic Blood",
-      Image = "https://static.wikia.nocookie.net/tibia/images/8/8c/Flask_of_Demonic_Blood.gif/revision/latest?cb=20080115060508&path-prefix=en&format=original"
     };
 
     public IngredientModel Cookie(int cant) => new IngredientModel
@@ -144,11 +130,32 @@ namespace Tibia_Utilities.Core.HotCuisine
       Image = "https://static.wikia.nocookie.net/tibialatin/images/5/51/Cucumber.gif"
     };
 
+    public IngredientModel DeadChicken(int cant) => new IngredientModel
+    {
+      Cant = cant,
+      Name = "Dead Chicken",
+      Image = "https://static.wikia.nocookie.net/tibia/images/5/5a/Dead_Chicken1.gif/revision/latest?cb=20091022154543&path-prefix=en"
+    };
+
+    public IngredientModel Dragonfruit(int cant) => new IngredientModel
+    {
+      Cant = cant,
+      Name = "Dragonfruit",
+      Image = "https://www.tibiawiki.com.br/images/3/3d/Dragonfruit.gif"
+    };
+
     public IngredientModel Egg(int cant) => new IngredientModel
     {
       Cant = cant,
       Name = "Egg",
       Image = "https://static.wikia.nocookie.net/tibialatin/images/e/ed/Egg.gif"
+    };
+
+    public IngredientModel FlaskOfDemonicBlood(int cant) => new IngredientModel
+    {
+      Cant = cant,
+      Name = "Flask of Demonic Blood",
+      Image = "https://static.wikia.nocookie.net/tibia/images/8/8c/Flask_of_Demonic_Blood.gif/revision/latest?cb=20080115060508&path-prefix=en&format=original"
     };
 
     public IngredientModel Fern(int cant) => new IngredientModel
@@ -333,6 +340,13 @@ namespace Tibia_Utilities.Core.HotCuisine
       Image = "https://static.wikia.nocookie.net/tibialatin/images/8/8f/Roll.gif"
     };
 
+    public IngredientModel Salt(int cant) => new IngredientModel
+    {
+      Cant = cant,
+      Name = "Salt",
+      Image = "https://www.tibiawiki.com.br/images/8/8a/Salt.gif"
+    };
+
     public IngredientModel SandcrawlerShell(int cant) => new IngredientModel
     {
       Cant = cant,
@@ -375,6 +389,13 @@ namespace Tibia_Utilities.Core.HotCuisine
       Image = "https://static.wikia.nocookie.net/tibialatin/images/d/da/Stone_Herb.gif"
     };
 
+    public IngredientModel Taiyaki(int cant) => new IngredientModel
+    {
+      Cant = cant,
+      Name = "Taiyaki",
+      Image = "https://www.tibiawiki.com.br/images/3/3d/Taiyaki.gif"
+    };
+
     public IngredientModel Tomato(int cant) => new IngredientModel
     {
       Cant = cant,
@@ -408,6 +429,13 @@ namespace Tibia_Utilities.Core.HotCuisine
       Cant = cant,
       Name = "Vial of Wine",
       Image = "https://static.wikia.nocookie.net/tibia/images/1/15/Wine.gif/revision/latest?cb=20170912012540&path-prefix=en&format=original"
+    };
+
+    public IngredientModel YoungLichWorm(int cant) => new IngredientModel
+    {
+      Cant = cant,
+      Name = "Young Lich Worm",
+      Image = "https://www.tibiawiki.com.br/images/f/f2/Young_Lich_Worm.gif"
     };
   }
 }

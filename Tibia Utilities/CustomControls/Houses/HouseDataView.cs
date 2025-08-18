@@ -11,8 +11,6 @@ namespace Tibia_Utilities.CustomControls.Houses
   {
     public event EventHandler<HouseDataView> HouseDataClick;
 
-    private bool clicked = false;
-
     public HouseDataView()
     {
       InitializeComponent();
@@ -125,7 +123,6 @@ namespace Tibia_Utilities.CustomControls.Houses
     public void DisposeData()
     {
       BackColor = Color.Transparent;
-      clicked = false;
     }
 
     public override string ToString()

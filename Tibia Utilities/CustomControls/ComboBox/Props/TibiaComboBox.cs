@@ -157,7 +157,7 @@ namespace Tibia_Utilities.CustomControls
       return lblWorld.Text;
     }
 
-    internal async void HideDropDown()
+    internal void HideDropDown()
     {
       Application.RemoveMessageFilter(_dropDownMessageFilter);
       Application.DoEvents();

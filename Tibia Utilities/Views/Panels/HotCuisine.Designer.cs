@@ -285,7 +285,7 @@
       this.recipesContainer.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
       this.recipesContainer.Location = new System.Drawing.Point(0, 0);
       this.recipesContainer.Name = "recipesContainer";
-      this.recipesContainer.Size = new System.Drawing.Size(365, 448);
+      this.recipesContainer.Size = new System.Drawing.Size(365, 450);
       this.recipesContainer.TabIndex = 15;
       // 
       // allRecipesPanel
@@ -295,10 +295,10 @@
       this.allRecipesPanel.Controls.Add(this.allRecipesViewPanel);
       this.allRecipesPanel.Controls.Add(this.addAllBtn);
       this.allRecipesPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-      this.allRecipesPanel.Location = new System.Drawing.Point(0, 448);
+      this.allRecipesPanel.Location = new System.Drawing.Point(0, 450);
       this.allRecipesPanel.Name = "allRecipesPanel";
       this.allRecipesPanel.OriginalImage = global::Tibia_Utilities.Properties.Resources.TextureBackground;
-      this.allRecipesPanel.Size = new System.Drawing.Size(365, 27);
+      this.allRecipesPanel.Size = new System.Drawing.Size(365, 25);
       this.allRecipesPanel.TabIndex = 14;
       // 
       // clearBtn
@@ -309,7 +309,7 @@
       this.clearBtn.Name = "clearBtn";
       this.clearBtn.OriginalImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
       this.clearBtn.PressedImage = global::Tibia_Utilities.Properties.Resources.BorderedPanel;
-      this.clearBtn.Size = new System.Drawing.Size(32, 27);
+      this.clearBtn.Size = new System.Drawing.Size(32, 25);
       this.clearBtn.TabIndex = 8;
       this.clearBtn.Text = "Clear";
       this.clearBtn.UnpressedImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
@@ -324,7 +324,7 @@
       this.removeAllBtn.Name = "removeAllBtn";
       this.removeAllBtn.OriginalImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
       this.removeAllBtn.PressedImage = global::Tibia_Utilities.Properties.Resources.BorderedPanel;
-      this.removeAllBtn.Size = new System.Drawing.Size(32, 27);
+      this.removeAllBtn.Size = new System.Drawing.Size(32, 25);
       this.removeAllBtn.TabIndex = 7;
       this.removeAllBtn.Text = "- 1";
       this.removeAllBtn.UnpressedImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
@@ -339,7 +339,7 @@
       this.allRecipesViewPanel.Margin = new System.Windows.Forms.Padding(0);
       this.allRecipesViewPanel.Name = "allRecipesViewPanel";
       this.allRecipesViewPanel.OriginalImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
-      this.allRecipesViewPanel.Size = new System.Drawing.Size(269, 27);
+      this.allRecipesViewPanel.Size = new System.Drawing.Size(269, 25);
       this.allRecipesViewPanel.TabIndex = 6;
       // 
       // lblAllRecipes
@@ -348,7 +348,7 @@
       this.lblAllRecipes.Dock = System.Windows.Forms.DockStyle.Fill;
       this.lblAllRecipes.Location = new System.Drawing.Point(0, 0);
       this.lblAllRecipes.Name = "lblAllRecipes";
-      this.lblAllRecipes.Size = new System.Drawing.Size(269, 27);
+      this.lblAllRecipes.Size = new System.Drawing.Size(269, 25);
       this.lblAllRecipes.TabIndex = 0;
       this.lblAllRecipes.Text = "All Recipes";
       this.lblAllRecipes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -362,7 +362,7 @@
       this.addAllBtn.Name = "addAllBtn";
       this.addAllBtn.OriginalImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;
       this.addAllBtn.PressedImage = global::Tibia_Utilities.Properties.Resources.BorderedPanel;
-      this.addAllBtn.Size = new System.Drawing.Size(32, 27);
+      this.addAllBtn.Size = new System.Drawing.Size(32, 25);
       this.addAllBtn.TabIndex = 5;
       this.addAllBtn.Text = "+ 1";
       this.addAllBtn.UnpressedImage = global::Tibia_Utilities.Properties.Resources.RaisedPanel;

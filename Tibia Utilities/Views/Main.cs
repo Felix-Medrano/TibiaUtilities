@@ -103,13 +103,13 @@ namespace Tibia_Utilities
       };
       panels.Add(Main);
 
-      var HotCuisine = new PanelDataModel
+      var TestControl = new PanelDataModel
       {
-        ButtonText = "Hot Cuisine",
-        ButtonImage = Resources.Cookbook,
-        Panel = new HotCuisine()
+        ButtonText = "Other",
+        ButtonImage = Resources.Backpack,
+        Panel = new Equipment()
       };
-      panels.Add(HotCuisine);
+      panels.Add(TestControl);
 #else
 
       var Main = new PanelDataModel
@@ -143,6 +143,14 @@ namespace Tibia_Utilities
         Panel = new HotCuisine()
       };
       panels.Add(HotCuisine);
+
+      //var Bot = new PanelDataModel
+      //{
+      //  ButtonText = "Hijo Bot",
+      //  ButtonImage = Resources.TibBot,
+      //  Panel = new Bot()
+      //};
+      //panels.Add(Bot);
 
       //KEEP: Add new panels before here, Info should be the last one
       var Info = new PanelDataModel

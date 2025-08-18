@@ -462,6 +462,16 @@ namespace Tibia_Utilities.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TextBoxBackGround {
+            get {
+                object obj = ResourceManager.GetObject("TextBoxBackGround", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TextureBackground {
             get {
                 object obj = ResourceManager.GetObject("TextureBackground", resourceCulture);
@@ -475,6 +485,16 @@ namespace Tibia_Utilities.Properties {
         internal static System.Drawing.Bitmap ThumbScrollBar {
             get {
                 object obj = ResourceManager.GetObject("ThumbScrollBar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TibBot {
+            get {
+                object obj = ResourceManager.GetObject("TibBot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -544,6 +564,16 @@ namespace Tibia_Utilities.Properties {
         internal static System.Drawing.Bitmap Veggie_Casserole {
             get {
                 object obj = ResourceManager.GetObject("Veggie_Casserole", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zaoan_Sauce {
+            get {
+                object obj = ResourceManager.GetObject("Zaoan_Sauce", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

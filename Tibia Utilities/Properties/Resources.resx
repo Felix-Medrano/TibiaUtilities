@@ -238,11 +238,17 @@
   <data name="Sweet_Mangonaise_Elixir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sweet Mangonaise Elixir.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TextBoxBackGround" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TextBoxBackGround.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TextureBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TextureBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ThumbScrollBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ThumbScrollBar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TibBot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TibBot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TopBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TopBar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -264,5 +270,8 @@
   </data>
   <data name="Veggie_Casserole" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Veggie Casserole.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zaoan_Sauce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zaoan_Sauce.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

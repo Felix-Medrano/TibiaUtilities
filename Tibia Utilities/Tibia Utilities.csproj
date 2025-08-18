@@ -110,6 +110,12 @@
     <Compile Include="CustomControls\ComboBox\Props\TCBDropDown.Designer.cs">
       <DependentUpon>TCBDropDown.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\Equipment\EquipmentItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Equipment\EquipmentItem.Designer.cs">
+      <DependentUpon>EquipmentItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\HotCuisine\MainIngredientRow.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -179,6 +185,12 @@
     <Compile Include="CustomControls\TUMainPanelButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CustomControls\TUNumUpDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TUNumUpDown.Designer.cs">
+      <DependentUpon>TUNumUpDown.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\TUPanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -190,6 +202,12 @@
     </Compile>
     <Compile Include="CustomControls\TUCtrlButton.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TUTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TUTextBox.Designer.cs">
+      <DependentUpon>TUTextBox.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomControls\TUTopControlBar.cs">
       <SubType>Component</SubType>
@@ -203,9 +221,12 @@
     <Compile Include="Lib\ExtendedMethods.cs" />
     <Compile Include="Lib\Helper.cs" />
     <Compile Include="Lib\NaturalOrderComparer.cs" />
+    <Compile Include="Lib\TUEnums.cs" />
     <Compile Include="Lib\TUStrings.cs" />
     <Compile Include="Lib\Win32.cs" />
     <Compile Include="Models\DropDownDataModel.cs" />
+    <Compile Include="Models\Equipment\EquipmentBaseModel.cs" />
+    <Compile Include="Models\Equipment\Helmets\TiaraOfPower.cs" />
     <Compile Include="Models\HotCuisine\IngredientModel.cs" />
     <Compile Include="Models\HotCuisine\RecipeModel.cs" />
     <Compile Include="Models\HotCuisine\TownModel.cs" />
@@ -252,6 +273,12 @@
     <Compile Include="Views\Panels\MainPanel.Designer.cs">
       <DependentUpon>MainPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Panels\Equipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Panels\Equipment.Designer.cs">
+      <DependentUpon>Equipment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Panels\SplitLoot.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +287,9 @@
     </Compile>
     <EmbeddedResource Include="CustomControls\ComboBox\Props\TCBDropDown.resx">
       <DependentUpon>TCBDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\Equipment\EquipmentItem.resx">
+      <DependentUpon>EquipmentItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\HotCuisine\MainIngredientRow.resx">
       <DependentUpon>MainIngredientRow.cs</DependentUpon>
@@ -279,6 +309,7 @@
     <EmbeddedResource Include="CustomControls\Houses\HousesList.resx">
       <DependentUpon>HousesList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\SplitLoot\PartyLootData.resx" />
     <EmbeddedResource Include="CustomControls\SplitLoot\PartyPlayerData.resx">
       <DependentUpon>PartyPlayerData.cs</DependentUpon>
     </EmbeddedResource>
@@ -290,6 +321,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\TibiaVScrollBar.resx">
       <DependentUpon>TibiaVScrollBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\TUNumUpDown.resx">
+      <DependentUpon>TUNumUpDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\TUTextBox.resx">
+      <DependentUpon>TUTextBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -315,6 +352,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Panels\MainPanel.resx">
       <DependentUpon>MainPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Panels\Equipment.resx">
+      <DependentUpon>Equipment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Panels\SplitLoot.resx">
       <DependentUpon>SplitLoot.cs</DependentUpon>
@@ -400,6 +440,7 @@
     <None Include="Resources\TopBarS.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Zaoan_Sauce.gif" />
     <None Include="Resources\Veggie Casserole.png" />
     <None Include="Resources\UpScrollBarButton.png" />
     <None Include="Resources\DownScrollBarButton.png" />
@@ -434,12 +475,15 @@
     <None Include="Resources\Roasted Dragon Wings.png" />
     <None Include="Resources\Rotworm Stew.png" />
     <None Include="Resources\Sweet Mangonaise Elixir.gif" />
+    <Content Include="Resources\TextBoxBackGround.png" />
+    <Content Include="Resources\TibBot.png" />
     <Content Include="Resources\Unpress.ogg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Patterns\Observer\House\" />
+    <Folder Include="Views\Tools\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

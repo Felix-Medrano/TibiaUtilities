@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 
 using Tibia_Utilities.Lib;
+using Tibia_Utilities.Properties;
 
 namespace Tibia_Utilities.CustomControls
 {
@@ -110,6 +111,9 @@ namespace Tibia_Utilities.CustomControls
       //_originalImage = Resources.RaisedPanel;
 
       _edgeHeight = _edgeWidth = 5;
+
+      _unpressedImage = OriginalImage = Resources.MainButtonUnpressed;
+      _pressedImage = Resources.MainButtonPressed;
     }
 
     // Método privado para dividir la imagen y redibujar

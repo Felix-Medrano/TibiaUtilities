@@ -37,6 +37,7 @@
       public const string TITLE_TEXT_COLOR             = "#909090";
       public const string NEGA_TEXT_COLOR              = "#FF0000";
       public const string POSI_TEXT_COLOR              = "#008000";
+      public const string GRAY_SHADOW                  = "#717171";
       public const string WHITE_SIGNAL_TEXT_COLOR      = "#F4F4F4";
     }
 
@@ -110,6 +111,7 @@
       public const string POT_OF_BLACKJACK              = "Pot of Blackjack";
       public const string DEMONIC_CANDY_BALLS           = "Demonic Candy Balls";
       public const string SWEET_MANGONAISE_ELIXIR       = "Sweet Mangonaise Elixir";
+      public const string ZAOAN_SAUCE                   = "Zaoan Sauce";
     }
   }
 }

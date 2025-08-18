@@ -27,7 +27,8 @@ namespace Tibia_Utilities.Core.HotCuisine
         TUStrings.Recipes.COCONUT_SHRIMP_BAKE,
         TUStrings.Recipes.POT_OF_BLACKJACK,
         TUStrings.Recipes.DEMONIC_CANDY_BALLS,
-        TUStrings.Recipes.SWEET_MANGONAISE_ELIXIR
+        TUStrings.Recipes.SWEET_MANGONAISE_ELIXIR,
+        TUStrings.Recipes.ZAOAN_SAUCE
       });
     }
 
