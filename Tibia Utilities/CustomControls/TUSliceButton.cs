@@ -4,12 +4,15 @@ using System.Drawing;
 using System.Windows.Forms;
 
 using Tibia_Utilities.Lib;
+using Tibia_Utilities.Models.Equipment;
 using Tibia_Utilities.Properties;
 
 namespace Tibia_Utilities.CustomControls
 {
   public class TUSliceButton : Button
   {
+    public new event EventHandler Click;
+
     private Image _originalImage;
     private int _edgeWidth = 5; // Ancho de las orillas (izquierda y derecha)
     private int _edgeHeight = 5; // Alto de las orillas (superior e inferior)
@@ -21,7 +24,12 @@ namespace Tibia_Utilities.CustomControls
     private Image _pressedImage;
     private Image _unpressedImage;
 
+    private Image _icon;
+
     private bool isPressed = false;
+
+    [Browsable(false)]
+    public EquipmentBaseModel Holder { get; set; }
 
     // Propiedad para la imagen original
     [Browsable(true)]
@@ -94,6 +102,19 @@ namespace Tibia_Utilities.CustomControls
       set
       {
         _unpressedImage = value;
+      }
+    }
+
+    [Browsable(true)]
+    [Category("Appearance")]
+    [Description("Ícono que se dibuja en el centro del botón.")]
+    public Image Icon
+    {
+      get => _icon;
+      set
+      {
+        _icon = value;
+        Invalidate();
       }
     }
 
@@ -197,6 +218,15 @@ namespace Tibia_Utilities.CustomControls
       // Dibujar el centro expansible (repetido)
       DrawRepeatedImage(g, _center, _edgeWidth, _edgeHeight, width - (_edgeWidth * 2), height - (_edgeHeight * 2));
 
+      if (_icon != null && _icon.Width > 0 && _icon.Height > 0)
+      {
+
+        int centerX = (Width / 2) - (_icon.Width / 2);
+        int centerY = (Height / 2) - (_icon.Height / 2);
+
+        e.Graphics.DrawImage(_icon, new Rectangle(centerX, centerY, _icon.Width, _icon.Height));
+      }
+
       int textOffsetX = isPressed ? 1 : 0;
       int textOffsetY = isPressed ? 1 : 0;
 
@@ -262,6 +292,7 @@ namespace Tibia_Utilities.CustomControls
       Helper.Sounds.PlayReleaseButtonSound();
 
       SliceAndRedraw();
+      Click?.Invoke(this, EventArgs.Empty); // Invocar el evento Click
     }
 
     // Liberar recursos
