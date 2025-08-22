@@ -304,6 +304,7 @@
       // clearBtn
       // 
       this.clearBtn.Dock = System.Windows.Forms.DockStyle.Left;
+      this.clearBtn.Icon = null;
       this.clearBtn.Location = new System.Drawing.Point(301, 0);
       this.clearBtn.Margin = new System.Windows.Forms.Padding(0);
       this.clearBtn.Name = "clearBtn";
@@ -319,6 +320,7 @@
       // removeAllBtn
       // 
       this.removeAllBtn.Dock = System.Windows.Forms.DockStyle.Left;
+      this.removeAllBtn.Icon = null;
       this.removeAllBtn.Location = new System.Drawing.Point(269, 0);
       this.removeAllBtn.Margin = new System.Windows.Forms.Padding(0);
       this.removeAllBtn.Name = "removeAllBtn";
@@ -357,6 +359,7 @@
       // addAllBtn
       // 
       this.addAllBtn.Dock = System.Windows.Forms.DockStyle.Right;
+      this.addAllBtn.Icon = null;
       this.addAllBtn.Location = new System.Drawing.Point(333, 0);
       this.addAllBtn.Margin = new System.Windows.Forms.Padding(0);
       this.addAllBtn.Name = "addAllBtn";
