@@ -23,7 +23,7 @@ namespace Tibia_Utilities.Lib
     public const int HTTRANSPARENT = -1; // El clic ocurrió en un control transparente
 
     //(m.Msg == 0x201 || m.Msg == 0x204 || m.Msg == 0x205)
-    public const int N_LBUTTONDOWN = 0X201; //Btn Izzquierdo presionado
+    public const int N_LBUTTONDOWN = 0X201; //Btn Izquierdo presionado
     public const int N_RBUTTONDOWN = 0X204; //Btn Derecho presionado
     public const int N_RBUTTONUP = 0X205; //Btn Derecho liberado
 
