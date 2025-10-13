@@ -93,6 +93,16 @@ namespace Tibia_Utilities.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bestiary_Icon {
+            get {
+                object obj = ResourceManager.GetObject("Bestiary_Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Blessed_Steak {
             get {
                 object obj = ResourceManager.GetObject("Blessed_Steak", resourceCulture);

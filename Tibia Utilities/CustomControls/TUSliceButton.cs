@@ -4,7 +4,6 @@ using System.Drawing;
 using System.Windows.Forms;
 
 using Tibia_Utilities.Lib;
-using Tibia_Utilities.Models.Equipment;
 using Tibia_Utilities.Properties;
 
 namespace Tibia_Utilities.CustomControls
@@ -27,9 +26,6 @@ namespace Tibia_Utilities.CustomControls
     private Image _icon;
 
     private bool isPressed = false;
-
-    [Browsable(false)]
-    public EquipmentBaseModel Holder { get; set; }
 
     // Propiedad para la imagen original
     [Browsable(true)]
@@ -218,17 +214,17 @@ namespace Tibia_Utilities.CustomControls
       // Dibujar el centro expansible (repetido)
       DrawRepeatedImage(g, _center, _edgeWidth, _edgeHeight, width - (_edgeWidth * 2), height - (_edgeHeight * 2));
 
+      int textOffsetX = isPressed ? 1 : 0;
+      int textOffsetY = isPressed ? 1 : 0;
+
       if (_icon != null && _icon.Width > 0 && _icon.Height > 0)
       {
 
-        int centerX = (Width / 2) - (_icon.Width / 2);
-        int centerY = (Height / 2) - (_icon.Height / 2);
+        int centerX = ((Width / 2) - (_icon.Width / 2)) + textOffsetX;
+        int centerY = ((Height / 2) - (_icon.Height / 2)) + textOffsetY;
 
         e.Graphics.DrawImage(_icon, new Rectangle(centerX, centerY, _icon.Width, _icon.Height));
       }
-
-      int textOffsetX = isPressed ? 1 : 0;
-      int textOffsetY = isPressed ? 1 : 0;
 
       // Dibujar el texto centrado
       if (!string.IsNullOrEmpty(Text))

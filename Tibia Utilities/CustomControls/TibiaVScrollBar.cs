@@ -216,6 +216,7 @@ namespace Tibia_Utilities.CustomControls
       }
 
       ViewContainer.Update();
+      ViewContainer.Invalidate();
     }
 
     public void UpdateThumbHeight()

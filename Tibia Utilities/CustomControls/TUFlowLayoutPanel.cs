@@ -6,12 +6,15 @@ namespace Tibia_Utilities.CustomControls
   {
     public TUFlowLayoutPanel()
     {
-      // Habilitar el doble búfer
-      SetStyle(
-          ControlStyles.DoubleBuffer |
-          ControlStyles.UserPaint |
-          ControlStyles.AllPaintingInWmPaint,
-          true);
+      DoubleBuffered = true;
+      SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
+
+      //// Habilitar el doble búfer
+      //SetStyle(
+      //    ControlStyles.DoubleBuffer |
+      //    ControlStyles.UserPaint |
+      //    ControlStyles.AllPaintingInWmPaint,
+      //    true);
 
       // Reducir el parpadeo adicional
       UpdateStyles();

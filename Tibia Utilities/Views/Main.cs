@@ -105,9 +105,9 @@ namespace Tibia_Utilities
 
       var TestControl = new PanelDataModel
       {
-        ButtonText = "Other",
-        ButtonImage = Resources.Backpack,
-        Panel = new Equipment()
+        ButtonText = "Fast Debug",
+        ButtonImage = Resources.Bestiary_Icon,
+        Panel = new Bestiary()
       };
       panels.Add(TestControl);
 #else
