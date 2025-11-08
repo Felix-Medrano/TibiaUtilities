@@ -19,6 +19,7 @@ namespace Tibia_Utilities
       const string appName = "TibiaUtilitiesApp";
       bool createdNew;
 
+      var a = Application.ProductName;
       mutex = new Mutex(true, appName, out createdNew);
 
       if (!createdNew)
